@@ -405,6 +405,9 @@
          ((gnc:html-table-cell? obj)
           (set! o (gnc:make-html-object-internal
                    gnc:html-table-cell-render obj)))
+         ((gnc:html-chart? obj)
+          (set! o (gnc:make-html-object-internal
+                   gnc:html-chart-render obj)))
          ((gnc:html-barchart? obj)
           (set! o (gnc:make-html-object-internal
                    gnc:html-barchart-render obj)))

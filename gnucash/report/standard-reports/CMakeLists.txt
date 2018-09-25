@@ -5,6 +5,7 @@ set (standard_reports_SCHEME standard-reports.scm)
 
 set (standard_reports_SCHEME_2
     account-piecharts.scm
+    account-piecharts-upgraded.scm
     account-summary.scm
     advanced-portfolio.scm
     average-balance.scm
@@ -24,8 +25,10 @@ set (standard_reports_SCHEME_2
     income-gst-statement.scm
     income-statement.scm
     net-charts.scm
+    net-charts-upgraded.scm
     portfolio.scm
     price-scatter.scm
+    price-scatter-upgraded.scm
     register.scm
     sx-summary.scm
     transaction.scm
