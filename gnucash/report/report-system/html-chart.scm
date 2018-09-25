@@ -104,17 +104,22 @@
    #t   ;;markers
    #t   ;;y-grid?
    #t   ;;x-grid?
-   '()  ;;data
+   (gnc:make-html-table) ;; data
    #f   ;;urls
    1.5  ;;line-width
    "\u00A4"  ;;currency-symbol
    ))
 
-(define gnc:html-chart-data
+(define chart-data-internal
   (record-accessor <html-chart> 'data))
 
-(define gnc:html-chart-set-data!
-  (record-modifier <html-chart> 'data))
+(define (gnc:html-chart-data chart)
+  (gnc:html-table-data (chart-data-internal chart))
+)
+
+(define (gnc:html-chart-set-data! chart data)
+  (gnc:html-table-set-data! (chart-data-internal chart) data)
+)
 
 (define gnc:html-chart-width
   (record-accessor <html-chart> 'width))
@@ -266,49 +271,20 @@ document.getElementById(chartid).onclick = function(evt) {
 }\n\n" id))
 
 (define (gnc:html-chart-append-row! chart newrow)
-  (let ((dd (gnc:html-chart-data chart)))
-    (set! dd (append dd (list newrow)))
-    (gnc:html-chart-set-data! chart dd)))
+  (gnc:html-table-append-row! (chart-data-internal chart) newrow)
+)
 
 (define (gnc:html-chart-prepend-row! chart newrow)
-  (let ((dd (gnc:html-chart-data chart)))
-    (set! dd (cons newrow dd))
-    (gnc:html-chart-set-data! chart dd)))
+  (gnc:html-table-prepend-row! (chart-data-internal chart) newrow)
+)
 
 (define (gnc:html-chart-append-column! chart newcol)
-  (let* ((rownum 0)
-         (rows (gnc:html-chart-data chart))
-         (colnum (apply max (cons 0 (map length rows))))
-         (this-row #f)
-         (new-row #f))
+  (gnc:html-table-append-column! (chart-data-internal chart) newcol)
+)
 
-    ;; append the elements of 'newrow' to the rowumns
-    (for-each
-     (lambda (newelt)
-       ;; find the row, or append one
-       (if (null? rows)
-           (begin
-             (set! new-row #t)
-             (set! this-row '()))
-           (begin
-             (set! new-row #f)
-             (set! this-row (car rows))
-             (if (null? (cdr rows))
-                 (set! rows #f)
-                 (set! rows (cdr rows)))))
-
-       ;; make sure the rowumn is long enough, then append the data
-       (let loop ((l (length this-row))
-                  (r (reverse this-row)))
-         (if (< l colnum)
-             (loop (1+ l) (cons #f r))
-             (set! this-row
-               (reverse (cons newelt r)))))
-       (if new-row
-           (gnc:html-chart-append-row! chart this-row)
-           (list-set! (gnc:html-chart-data chart) rownum this-row))
-       (set! rownum (1+ rownum)))
-     newcol)))
+(define (gnc:html-chart-prepend-column! chart newcol)
+  (gnc:html-table-prepend-column! (chart-data-internal chart) newcol)
+)
 
 (define (gnc:not-all-zeros data)
   (define (myor lst)
@@ -318,30 +294,6 @@ document.getElementById(chartid).onclick = function(evt) {
   (cond ((number? data) (not (zero? data)))
         ((list? data) (myor (map gnc:not-all-zeros data)))
         (else #f)))
-
-(define (gnc:html-chart-prepend-column! chart newcol)
-  (let ((rows (gnc:html-chart-data chart))
-        (this-row #f)
-        (new-row #f)
-        (rownum 0))
-    (for-each
-     (lambda (elt)
-       (if (null? rows)
-           (begin
-             (set! new-row #t)
-             (set! this-row '()))
-           (begin
-             (set! new-row #f)
-             (set! this-row (car rows))
-             (if (null? (cdr rows))
-                 (set! rows #f)
-                 (set! rows (cdr rows)))))
-       (if new-row
-           (gnc:html-chart-append-row! chart (list elt))
-           (list-set! (gnc:html-chart-data chart) rownum
-                      (cons elt this-row)))
-       (set! rownum (1+ rownum)))
-     newcol)))
 
 (define (gnc:html-chart-render chart doc)
 

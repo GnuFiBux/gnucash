@@ -20,6 +20,7 @@ set (scm_test_report_system_with_srfi64_SOURCES
   test-report-utilities.scm
   test-html-utilities-srfi64.scm
   test-report-system.scm
+  test-report-chart.scm
   )
 
 set(GUILE_DEPENDS
