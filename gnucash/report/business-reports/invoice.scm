@@ -675,7 +675,8 @@ for styling the invoice. Please see the exported report for the CSS class names.
 (define (make-img img-url)
   ;; just an image
   (gnc:make-html-text
-   (gnc:html-markup-img img-url)))
+   (gnc:html-markup-img
+    (make-file-url img-url))))
 
 (define (make-client-table owner orders options)
   (define (opt-val section name)
@@ -801,6 +802,9 @@ for styling the invoice. Please see the exported report for the CSS class names.
                                 (else
                                  (_ "Invoice"))))
                (title (if (string-null? custom-title) default-title custom-title))
+               ;; Translators: This is the format of the invoice title.
+               ;; The first ~a is "Invoice", "Credit Note"... and the second the number.
+               ;; Replace " #" by whatever is common as number abbreviation, i.e. "~a Nr. ~a"
                (invoice-title (format #f (_"~a #~a") title (gncInvoiceGetID invoice)))
                (layout-lookup-table (list (cons 'none #f)
                                           (cons 'picture (gnc:make-html-div/markup
