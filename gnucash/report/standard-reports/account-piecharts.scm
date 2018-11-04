@@ -516,6 +516,10 @@ balance at a given time"))
 		  (sort (filter (lambda (pair) (not (>= 0.0 (car pair))))
 				(fix-signs (cdr (base-data))))
                         (sort-comparator sort-method show-fullname?)))
+            (set! omitted
+		  (sort (filter (lambda (pair) (>= 0.0 (car pair)))
+				(fix-signs (cdr (base-data))))
+                        (sort-comparator sort-method show-fullname?)))
 
             ;; if too many slices, condense them to an 'other' slice
             ;; and add a link to a new pie report with just those
