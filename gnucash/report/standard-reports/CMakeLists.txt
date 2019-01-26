@@ -7,6 +7,7 @@ set (standard_reports_SCHEME_2
     account-piecharts.scm
     account-summary.scm
     advanced-portfolio.scm
+    asset-performance.scm
     average-balance.scm
     balance-sheet.scm
     budget-balance-sheet.scm
