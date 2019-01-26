@@ -66,13 +66,13 @@ GncNumeric parse_amount_price (const std::string &str, int currency_format)
     std::string str_no_symbols = boost::u32regex_replace(str, expr, "");
 
     /* Convert based on user chosen currency format */
-    gnc_numeric val;
+    gnc_numeric val = gnc_numeric_zero();
     char *endptr;
     switch (currency_format)
     {
     case 0:
         /* Currency locale */
-        if (!(xaccParseAmount (str_no_symbols.c_str(), TRUE, &val, &endptr)))
+        if (!(xaccParseAmountPosSign (str_no_symbols.c_str(), TRUE, &val, &endptr, TRUE)))
             throw std::invalid_argument (_("Value can't be parsed into a number using the selected currency format."));
         break;
     case 1:
@@ -234,7 +234,7 @@ std::string GncImportPrice::verify_essentials (void)
     else if (m_from_commodity == boost::none)
         return _("No 'Commodity from' column.");
     else if (gnc_commodity_equal (*m_from_commodity, *m_to_currency))
-        return _("'Commodity from' can not be the same as 'Currency to'.");
+        return _("'Commodity From' can not be the same as 'Currency To'.");
     else
         return std::string();
 }

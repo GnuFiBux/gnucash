@@ -111,33 +111,6 @@ gnc_imap_dialog_close_cb (GtkDialog *dialog, gpointer user_data)
     LEAVE(" ");
 }
 
-static gboolean
-are_you_sure (ImapDialog *imap_dialog)
-{
-    GtkWidget   *dialog;
-    gint         response;
-    const char  *title = _("Are you sure you want to delete the entries ?");
-
-    dialog = gtk_message_dialog_new (GTK_WINDOW (imap_dialog->dialog),
-                                     GTK_DIALOG_DESTROY_WITH_PARENT,
-                                     GTK_MESSAGE_QUESTION,
-                                     GTK_BUTTONS_CANCEL,
-                                     "%s", title);
-
-    gtk_dialog_add_button (GTK_DIALOG(dialog), _("_Delete"), GTK_RESPONSE_ACCEPT);
-
-    gtk_widget_grab_focus (gtk_dialog_get_widget_for_response (GTK_DIALOG(dialog), GTK_RESPONSE_ACCEPT));
-
-    response = gtk_dialog_run (GTK_DIALOG(dialog));
-
-    gtk_widget_destroy (dialog);
-
-    if (response == GTK_RESPONSE_ACCEPT)
-        return TRUE;
-    else
-        return FALSE;
-}
-
 static void
 delete_info_bayes (Account *source_account, gchar *head, gint depth)
 {
@@ -223,12 +196,11 @@ gnc_imap_dialog_delete (ImapDialog *imap_dialog)
     if (g_list_length (list) == 0)
         return;
 
-    // Are we sure we want to delete the entries
-    if (are_you_sure (imap_dialog) == FALSE)
-        return;
-
     // reverse list
     list = g_list_reverse (list);
+
+    // Suspend GUI refreshing
+    gnc_suspend_gui_refresh();
 
     // Walk the list
     for (row = g_list_first (list); row; row = g_list_next (row))
@@ -240,6 +212,9 @@ gnc_imap_dialog_delete (ImapDialog *imap_dialog)
     g_list_free (list);
 
     get_account_info (imap_dialog);
+
+    // Enable GUI refresh again
+    gnc_resume_gui_refresh();
 }
 
 void

@@ -1,10 +1,6 @@
-/*******************************************************************\
- * csv-account-import.h -- Account importing from file              *
- *                                                                  *
- * Copyright (C) 2012 Robert Fewell                                 *
- *                                                                  *
- * Based on code from bi_import written by Sebastian Held  and      *
- * Mike Evans.                                                      *
+/********************************************************************\
+ * gnc-locale-utils.hpp -- provide a default locale for C++         *
+ * Copyright (C) 2019 John Ralls <jralls@ceridwen.us                *
  *                                                                  *
  * This program is free software; you can redistribute it and/or    *
  * modify it under the terms of the GNU General Public License as   *
@@ -23,30 +19,21 @@
  * 51 Franklin Street, Fifth Floor    Fax:    +1-617-542-2652       *
  * Boston, MA  02110-1301,  USA       gnu@gnu.org                   *
 \********************************************************************/
+#ifndef GNC_LOCALE_UTILS_HPP
+#define GNC_LOCALE_UTILS_HPP
 
-#ifndef CSV_ACCOUNT_IMPORT_H
-#define CSV_ACCOUNT_IMPORT_H
+#include <locale>
 
-#include <glib.h>
-#include <gtk/gtk.h>
+/** Get the default application locale.
+ *
+ *  If we set std::locale::global we have to imbue every stream that
+ *  we want in the C locale, and that's a lot more than we want imbued
+ *  with the application locale. Calling std::locale("") is expensive,
+ *  so call this instead.
+ *
+ *  @returns A static std::locale representing the one set with
+ *  setlocale() in main().
+ */
+const std::locale& gnc_get_locale();
 
-#include "assistant-csv-account-import.h"
-
-enum _csv_import_result
-{
-    RESULT_OK,
-    RESULT_OPEN_FAILED,
-    RESULT_ERROR_IN_REGEXP,
-    MATCH_FOUND,
-};
-typedef enum _csv_import_result csv_import_result;
-
-csv_import_result
-csv_import_read_file (GtkWindow *win, const gchar *filename,
-                      const gchar *parser_regexp,
-                      GtkListStore *store, guint max_rows );
-
-void csv_account_import (CsvImportInfo *info);
-
-#endif /* CSV_ACCOUNT_IMPORT_H */
-
+#endif /* GNC_LOCALE_UTILS_HPP */

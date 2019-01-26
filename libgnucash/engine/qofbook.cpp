@@ -212,8 +212,7 @@ qof_book_get_property (GObject* object,
         qof_instance_get_path_kvp (QOF_INSTANCE (book), value, {"fy_end"});
         break;
     case PROP_AB_TEMPLATES:
-        key = const_cast<char*>(AB_KEY "/" AB_TEMPLATES);
-        qof_instance_get_path_kvp (QOF_INSTANCE (book), value, {"AB_KEY", "AB_TEMPLATES"});
+          qof_instance_get_path_kvp (QOF_INSTANCE (book), value, {"AB_KEY", "AB_TEMPLATES"});
         break;
     default:
         G_OBJECT_WARN_INVALID_PROPERTY_ID(object, prop_id, pspec);
@@ -1165,11 +1164,25 @@ qof_book_set_string_option(QofBook* book, const char* opt_name, const char* opt_
     auto frame = qof_instance_get_slots(QOF_INSTANCE(book));
     auto opt_path = opt_name_to_path(opt_name);
     if (opt_val && (*opt_val != '\0'))
-        delete frame->set(opt_path, new KvpValue(g_strdup(opt_val)));
+        delete frame->set_path(opt_path, new KvpValue(g_strdup(opt_val)));
     else
-        delete frame->set(opt_path, nullptr);
+        delete frame->set_path(opt_path, nullptr);
     qof_instance_set_dirty (QOF_INSTANCE (book));
     qof_book_commit_edit(book);
+}
+
+void
+qof_book_option_frame_delete (QofBook *book, const char* opt_name)
+{
+    if (opt_name && (*opt_name != '\0'))
+    {
+        qof_book_begin_edit(book);
+        auto frame = qof_instance_get_slots(QOF_INSTANCE(book));
+        auto opt_path = opt_name_to_path(opt_name);
+        delete frame->set_path(opt_path, nullptr);
+        qof_instance_set_dirty (QOF_INSTANCE (book));
+        qof_book_commit_edit(book);
+    }
 }
 
 void

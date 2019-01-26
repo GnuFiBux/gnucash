@@ -30,16 +30,22 @@ extern "C"
 #include <boost/date_time/gregorian/gregorian.hpp>
 #include <boost/date_time/posix_time/posix_time.hpp>
 #include <boost/date_time/local_time/local_time.hpp>
+#include <boost/locale.hpp>
 #include <boost/regex.hpp>
 #include <libintl.h>
+#include <locale.h>
 #include <map>
 #include <memory>
 #include <iostream>
 #include <sstream>
 #include <string>
 #include <vector>
+#include <gnc-locale-utils.hpp>
 #include "gnc-timezone.hpp"
 #include "gnc-datetime.hpp"
+#include "qoflog.h"
+
+static const char* log_module = "gnc.engine";
 
 #define N_(string) string //So that xgettext will find it
 
@@ -235,6 +241,8 @@ public:
     std::unique_ptr<GncDateImpl> date() const;
     std::string format(const char* format) const;
     std::string format_zulu(const char* format) const;
+    std::string format_iso8601() const;
+    static std::string timestamp();
 private:
     LDT m_time;
     static const TD time_of_day[3];
@@ -424,25 +432,39 @@ normalize_format (const std::string& format)
 std::string
 GncDateTimeImpl::format(const char* format) const
 {
-    using Facet = boost::local_time::local_time_facet;
+    namespace as = boost::locale::as;
     std::stringstream ss;
-    //The stream destructor frees the facet, so it must be heap-allocated.
-    auto output_facet(new Facet(normalize_format(format).c_str()));
-    ss.imbue(std::locale(std::locale(), output_facet));
-    ss << m_time;
+    ss.imbue(gnc_get_locale());
+    ss << as::ftime(format)
+       << as::time_zone(m_time.zone()->std_zone_name())
+       << static_cast<time64>(*this);
     return ss.str();
 }
 
 std::string
 GncDateTimeImpl::format_zulu(const char* format) const
 {
-    using Facet = boost::posix_time::time_facet;
+    namespace as = boost::locale::as;
     std::stringstream ss;
-    //The stream destructor frees the facet, so it must be heap-allocated.
-    auto output_facet(new Facet(normalize_format(format).c_str()));
-    ss.imbue(std::locale(std::locale(), output_facet));
-    ss << m_time.utc_time();
+    ss.imbue(gnc_get_locale());
+    ss << as::ftime(format) << as::gmt << static_cast<time64>(*this);
     return ss.str();
+}
+
+std::string
+GncDateTimeImpl::format_iso8601() const
+{
+    auto str = boost::posix_time::to_iso_extended_string(m_time.utc_time());
+    str[10] = ' ';
+    return str.substr(0, 19);
+}
+
+std::string
+GncDateTimeImpl::timestamp()
+{
+    GncDateTimeImpl gdt;
+    auto str = boost::posix_time::to_iso_string(gdt.m_time.local_time());
+    return str.substr(0, 8) + str.substr(9, 15);
 }
 
 /* Member function definitions for GncDateImpl.
@@ -499,7 +521,8 @@ GncDateImpl::format(const char* format) const
     std::stringstream ss;
     //The stream destructor frees the facet, so it must be heap-allocated.
     auto output_facet(new Facet(normalize_format(format).c_str()));
-    ss.imbue(std::locale(std::locale(), output_facet));
+    // FIXME Rather than imbueing a locale below we probably should set std::locale::global appropriately somewhere.
+    ss.imbue(std::locale(gnc_get_locale(), output_facet));
     ss << m_greg;
     return ss.str();
 }
@@ -570,6 +593,18 @@ std::string
 GncDateTime::format_zulu(const char* format) const
 {
     return m_impl->format_zulu(format);
+}
+
+std::string
+GncDateTime::format_iso8601() const
+{
+    return m_impl->format_iso8601();
+}
+
+std::string
+GncDateTime::timestamp()
+{
+    return GncDateTimeImpl::timestamp();
 }
 
 /* GncDate */

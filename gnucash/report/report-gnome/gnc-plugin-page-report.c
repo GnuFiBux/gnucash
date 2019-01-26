@@ -393,8 +393,9 @@ gnc_plugin_page_report_load_uri (GncPluginPage *page)
 
     report = GNC_PLUGIN_PAGE_REPORT(page);
     priv = GNC_PLUGIN_PAGE_REPORT_GET_PRIVATE(report);
+    if (!priv)
+        return FALSE; // No priv means the page doesn't exist anymore.
 
-    // FIXME.  This is f^-1(f(x)), isn't it?
     DEBUG( "Load uri id=%d", priv->reportId );
     id_name = g_strdup_printf("id=%d", priv->reportId );
     child_name = gnc_build_url( URL_TYPE_REPORT, id_name, NULL );
@@ -1122,6 +1123,13 @@ static action_toolbar_labels toolbar_labels[] =
     { "FilePrintAction", 	    N_("Print") },
     { "ReportExportAction",   N_("Export") },
     { "ReportOptionsAction",  N_("Options") },
+    /* Translators: This string is meant to be a short alternative for "Save Report Configuration"
+     * to be used as toolbar button label. */
+    { "ReportSaveAction", N_("Save Config") },
+    /* Translators: This string is meant to be a short alternative for "Save Report Configuration As..."
+     * to be used as toolbar button label. */
+    { "ReportSaveAsAction", N_("Save Config As...") },
+    { "FilePrintPDFAction", N_("Make Pdf") },
     { NULL, NULL },
 };
 

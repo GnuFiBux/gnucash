@@ -228,7 +228,7 @@ static GtkActionEntry gnc_plugin_page_account_tree_actions [] =
         G_CALLBACK (gnc_plugin_page_account_tree_cmd_delete_account)
     },
     {
-        "ColorCascadeAccountAction", NULL, N_("_Cascade Account Color..."), NULL,
+        "EditColorCascadeAccountAction", NULL, N_("_Cascade Account Color..."), NULL,
         N_("Cascade selected account color"),
         G_CALLBACK (gnc_plugin_page_account_tree_cmd_cascade_color_account)
     },
@@ -548,6 +548,7 @@ gnc_plugin_page_account_tree_open (Account *account, GtkWindow *win)
     else // we have no account pages, create one
         plugin_page = gnc_plugin_page_account_tree_new ();
 
+    g_return_if_fail(plugin_page);
     window = plugin_page->window;
 
     gnc_main_window_open_page (GNC_MAIN_WINDOW(window), plugin_page);
@@ -1070,6 +1071,9 @@ gnc_plugin_page_account_tree_selection_changed_cb (GtkTreeSelection *selection,
     action = gtk_action_group_get_action (action_group, "EditRenumberSubaccountsAction");
     g_object_set (G_OBJECT(action), "sensitive",
                   is_readwrite && sensitive && subaccounts, NULL);
+
+    action = gtk_action_group_get_action (action_group, "EditColorCascadeAccountAction");
+    g_object_set (G_OBJECT(action), "sensitive", subaccounts, NULL);
 
     gnc_plugin_update_actions (action_group, actions_requiring_account_rw,
                                "sensitive", is_readwrite && sensitive);

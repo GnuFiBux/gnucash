@@ -49,6 +49,7 @@ extern "C"
 #include "gnc-engine.h"
 }
 
+#include <gnc-locale-utils.hpp>
 #include <boost/locale.hpp>
 #include <string>
 #include <sstream>
@@ -2017,7 +2018,7 @@ void
 loan_rev_hash_to_list( gpointer key, gpointer val, gpointer user_data )
 {
     GList **l = (GList**)user_data;
-    RevRepaymentRow *rrr = g_new0( RevRepaymentRow, 1 );
+    RevRepaymentRow *rrr;
     if ( !key || !val )
     {
         DEBUG( "%.8x, %.8x",
@@ -2025,6 +2026,7 @@ loan_rev_hash_to_list( gpointer key, gpointer val, gpointer user_data )
                GPOINTER_TO_UINT(val));
         return;
     }
+    rrr  = g_new0( RevRepaymentRow, 1 );
     rrr->date = *(GDate*)key;
     rrr->numCells = (gnc_numeric*)val;
     *l = g_list_append( *l, (gpointer)rrr );
@@ -2319,7 +2321,7 @@ struct cust_prec_punct : std::moneypunct_byname<wchar_t, false> {
 template<int prec>
 std::string to_str_with_prec (const gdouble val)
 {
-    auto loc = std::locale(std::locale(""), new cust_prec_punct<prec>(""));
+    auto loc = std::locale(gnc_get_locale(), new cust_prec_punct<prec>(""));
     std::wstringstream valstr;
     valstr.imbue(loc);
     valstr << std::put_money(val * pow(10, prec));
