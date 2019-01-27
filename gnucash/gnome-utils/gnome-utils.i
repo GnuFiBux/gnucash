@@ -79,3 +79,9 @@ void gnc_window_show_progress (const char *message, double percentage);
 gboolean gnucash_ui_is_running(void);
 
 TaxTableWindow * gnc_ui_tax_table_window_new (GtkWindow *parent, QofBook *book);
+
+const gchar * gnc_ui_account_get_tax_form_line (const gchar *year,
+                                                const gchar *country,
+                                                const gchar *tax_type,
+                                                const gchar *form,
+                                                const gchar *item);

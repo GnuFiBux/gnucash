@@ -78,6 +78,7 @@ static void gnc_main_window_cmd_file_save_as (GtkAction *action, GncMainWindowAc
 static void gnc_main_window_cmd_file_revert (GtkAction *action, GncMainWindowActionData *data);
 static void gnc_main_window_cmd_file_export_accounts (GtkAction *action, GncMainWindowActionData *data);
 static void gnc_main_window_cmd_edit_tax_options (GtkAction *action, GncMainWindowActionData *data);
+static void gnc_main_window_cmd_tools_tax_info_editor (GtkAction *action, GncMainWindowActionData *data);
 static void gnc_main_window_cmd_actions_mortgage_loan (GtkAction *action, GncMainWindowActionData *data);
 static void gnc_main_window_cmd_actions_scheduled_transaction_editor (GtkAction *action, GncMainWindowActionData *data);
 static void gnc_main_window_cmd_actions_since_last_run (GtkAction *action, GncMainWindowActionData *data);
@@ -191,6 +192,11 @@ static GtkActionEntry gnc_plugin_actions [] =
         "ToolsPriceEditorAction", NULL, N_("_Price Database"), NULL,
         N_("View and edit the prices for stocks and mutual funds"),
         G_CALLBACK (gnc_main_window_cmd_tools_price_editor)
+    },
+    {
+        "ToolsTaxInfoEditorAction", NULL, N_("_Tax Info Editor"), NULL,
+        N_("Set up account data for the tax declaration report"),
+        G_CALLBACK (gnc_main_window_cmd_tools_tax_info_editor)
     },
     {
         "ToolsCommodityEditorAction", NULL, N_("_Security Editor"), NULL,
@@ -539,6 +545,15 @@ gnc_main_window_cmd_edit_tax_options (GtkAction *action, GncMainWindowActionData
     g_return_if_fail (data != NULL);
 
     gnc_tax_info_dialog (GTK_WIDGET (data->window));
+}
+
+static void
+gnc_main_window_cmd_tools_tax_info_editor (GtkAction *action, GncMainWindowActionData *data)
+{
+    g_return_if_fail (data != NULL);
+
+    gnc_tax_info_editor (GTK_WIDGET (data->window));
+
 }
 
 static void

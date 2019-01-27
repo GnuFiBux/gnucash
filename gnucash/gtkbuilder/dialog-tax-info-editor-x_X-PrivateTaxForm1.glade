@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk+" version="2.24"/>
+  <!-- interface-naming-policy project-wide -->
+  <object class="GtkListStore" id="listTaxItemLinesPrivateTaxForm1">
+    <columns>
+      <column type="gchararray"/><!-- item ID of structure <taxType>-<taxFormID>-<taxItem> -->
+      <column type="gchararray"/><!-- item Text -->
+      <column type="gchararray"/><!-- item help -->
+      <column type="gchararray"/><!-- item line in year 2012 -->
+      <column type="gchararray"/><!-- item line in year 2013 -->
+    </columns>
+    <data>
+      <row>
+        <col id="0" translatable="yes">IncomeTaxable</col>
+        <col id="1" translatable="yes">Income</col>
+        <col id="2" translatable="yes">Sum of taxable income</col>
+        <col id="3" translatable="yes">Line 1</col> <!-- line in 2012 -->
+        <col id="4" translatable="yes">Line 3</col> <!-- line in 2013 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">IncomeTaxesPaid</col>
+        <col id="1" translatable="yes">Income Tax</col>
+        <col id="2" translatable="yes">Income Taxes Paid during tax year</col>
+        <col id="3" translatable="yes">Line 2</col> <!-- line in 2012 -->
+        <col id="4" translatable="yes">Line 4</col> <!-- line in 2013 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">Insurances</col>
+        <col id="1" translatable="yes">Tax Related Insurances</col>
+        <col id="2" translatable="yes">Life Insurances</col>
+        <col id="3" translatable="yes">Line 3</col> <!-- line in 2012 -->
+        <col id="4" translatable="yes">Line 5</col> <!-- line in 2013 -->
+      </row>
+    </data>
+  </object>
+  <object class="GtkListStore" id="listTaxItemColumnsPrivateTaxForm1">
+    <columns>
+      <column type="gchararray"/> <!-- item ID -->
+      <column type="gchararray"/> <!-- item column -->
+      <column type="gchararray"/> <!-- column name -->
+    </columns>
+    <data>
+      <row>
+        <col id="0" translatable="yes">IncomeTaxable</col> <!-- column for salary -->
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">Tax Payer / Husband</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">IncomeTaxable</col> <!-- column for salary -->
+        <col id="1" translatable="yes">02</col>
+        <col id="2" translatable="yes">Wife</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">IncomeTaxesPaid</col> <!-- column for salary -->
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">Tax Payer / Husband</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">IncomeTaxesPaid</col> <!-- column for salary -->
+        <col id="1" translatable="yes">02</col>
+        <col id="2" translatable="yes">Wife</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">Insurances</col> <!-- column for wages -->
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">Flexible Taxed</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">Insurances</col> <!-- column for wages -->
+        <col id="1" translatable="yes">02</col>
+        <col id="2" translatable="yes">Fixed Taxed</col>
+      </row>
+    </data>
+  </object>
+</interface>

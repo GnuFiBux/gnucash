@@ -47,6 +47,21 @@ set (gtkbuilder_SOURCES
         dialog-search.glade
         dialog-sx.glade
         dialog-tax-info.glade
+	dialog-tax-info-editor.glade
+	dialog-tax-info-editor-TaxCountries.glade
+	dialog-tax-info-editor-de_DE-Einkommensteuer.glade
+	dialog-tax-info-editor-de_DE-EinkommensteuerAnlageAV.glade
+	dialog-tax-info-editor-de_DE-EinkommensteuerAnlageN-Ehefrau.glade
+	dialog-tax-info-editor-de_DE-EinkommensteuerAnlageN-StpflEhemann.glade
+	dialog-tax-info-editor-de_DE-EinkommensteuerAnlageV.glade
+	dialog-tax-info-editor-de_DE-EinkommensteuerAnlageVorsorge.glade
+	dialog-tax-info-editor-de_DE-EinkommensteuerMantelbogen.glade
+	dialog-tax-info-editor-de_DE-TaxTypes.glade
+	dialog-tax-info-editor-de_DE-TaxYears.glade
+	dialog-tax-info-editor-x_X-PrivateTax.glade
+	dialog-tax-info-editor-x_X-PrivateTaxForm1.glade
+	dialog-tax-info-editor-x_X-TaxTypes.glade
+	dialog-tax-info-editor-x_X-TaxYears.glade
         dialog-tax-table.glade
         dialog-totd.glade
         dialog-trans-assoc.glade

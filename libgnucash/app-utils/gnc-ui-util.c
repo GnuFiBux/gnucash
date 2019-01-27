@@ -498,7 +498,7 @@ gnc_ui_account_get_tax_info_string (const Account *account)
 
         tax_type = gnc_get_current_book_tax_type ();
         if (tax_type == NULL || (g_strcmp0 (tax_type, "") == 0))
-            return g_strdup (_("Tax entity type not specified"));
+            return g_strdup (code);
 
         atype = xaccAccountGetType (account);
         tax_entity_type = scm_from_utf8_string (tax_type);

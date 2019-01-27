@@ -95,6 +95,7 @@ set (gnc_gnome_SOURCES
   dialog-sx-from-trans.c
   dialog-sx-since-last-run.c
   dialog-tax-info.c
+  dialog-tax-info-editor.c
   dialog-trans-assoc.c
   dialog-vendor.c
   gnc-budget-view.c

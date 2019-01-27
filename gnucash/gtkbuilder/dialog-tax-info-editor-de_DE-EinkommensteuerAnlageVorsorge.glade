@@ -1,0 +1,1020 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk+" version="2.24"/>
+  <!-- interface-naming-policy project-wide -->
+  <object class="GtkListStore" id="listTaxItemLinesEinkommensteuerAnlageVorsorge">
+    <columns>
+      <column type="gchararray"/><!-- item ID of structure <taxType>-<taxFormID>-<taxItem> -->
+      <column type="gchararray"/><!-- item Text -->
+      <column type="gchararray"/><!-- item help -->
+      <column type="gchararray"/><!-- item line in year 2012 -->
+      <column type="gchararray"/><!-- item line in year 2013 -->
+      <column type="gchararray"/><!-- item line in year 2014 -->
+      <column type="gchararray"/><!-- item line in year 2015 -->
+      <column type="gchararray"/><!-- item line in year 2016 -->
+      <column type="gchararray"/><!-- item line in year 2017 -->
+      <column type="gchararray"/><!-- item line in year 2018 -->
+    </columns>
+    <data>
+      <row>
+        <col id="0" translatable="yes">RenteGesetzAN</col>
+        <col id="1" translatable="yes">Beiträge zur Altersversorgung</col>
+        <col id="2" translatable="yes">Beiträge laut Lohnsteuerbescheinigung Arbeitnehmeranteil</col>
+        <col id="3" translatable="yes">Zeile 04</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 04</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 04</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 04</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 04</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">elektr. übermittelt</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">elektr. übermittelt</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">RenteLandwirtschaft</col>
+        <col id="1" translatable="yes">Beiträge zur Altersversorgung</col>
+        <col id="2" translatable="yes">Beiträge zu landwirtschaftlichen Alterskassen sowie zu berufsständischen Versorgungseinrichtungen, die den gesetzlichen Rentenversicherungen vergleichbare Leistungen erbringen</col>
+        <col id="3" translatable="yes">Zeile 05</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 05</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 05</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 05</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 05</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">elektr. übermittelt</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">elektr. übermittelt</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">RenteGesetzSonst</col>
+        <col id="1" translatable="yes">Beiträge zur Altersversorgung</col>
+        <col id="2" translatable="yes">Beiträge zu gesetzlichen Rentenversicherungen sofern nicht anderweitig berücksichtigt</col>
+        <col id="3" translatable="yes">Zeile 06</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 06</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 06</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 06</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 06</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">elektr. übermittelt</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">elektr. übermittelt</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">RenteBasis</col>
+        <col id="1" translatable="yes">Beiträge zur Altersversorgung</col>
+        <col id="2" translatable="yes">Beiträge zu zertifizierten Basisrentenverträgen (sog. Rürup-Verträge) mit Laufzeitbeginn nach dem 31.12.2004</col>
+        <col id="3" translatable="yes">Zeile 07</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 07</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 07</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 07</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 08</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">elektr. übermittelt</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">elektr. übermittelt</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">RenteGesetzAG</col>
+        <col id="1" translatable="yes">Beiträge zur Altersversorgung</col>
+        <col id="2" translatable="yes">Arbeitgeberanteil lt. Lohnsteuerbescheinigung</col>
+        <col id="3" translatable="yes">Zeile 08</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 08</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 08</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 08</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 09</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">elektr. übermittelt</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">elektr. übermittelt</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">RenteGesetzAGSonst</col>
+        <col id="1" translatable="yes">Beiträge zur Altersversorgung</col>
+        <col id="2" translatable="yes">Steuerfreie Arbeitgeberanteile an berufsständische Versorgungseinrichtungen, soweit nicht in Nr. 22 b der Lohnsteuerbescheinigung enthalten</col>
+        <col id="3" translatable="yes">Zeile 09</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 09</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 09</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">nicht enthalten</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">nicht enthalten</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">elektr. übermittelt</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">elektr. übermittelt</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">RenteGesetzPauschalGeringBesch</col>
+        <col id="1" translatable="yes">Beiträge zur Altersversorgung</col>
+        <col id="2" translatable="yes">Arbeitgeberanteil zu gesetzlichen Rentenversicherungen im Rahmen einer pauschal besteuerten geringfügigen Beschäftigung</col>
+        <col id="3" translatable="yes">Zeile 10</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 10</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 10</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 09</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 10</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">elektr. übermittelt</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">elektr. übermittelt</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">KrankGesetz</col>
+        <col id="1" translatable="yes">Beiträge zur gesetzlichen Kranken- und Pflegeversicherung</col>
+        <col id="2" translatable="yes">Arbeitnehmerbeiträge zu Krankenversicherungen laut Lohnsteuerbescheinigung</col>
+        <col id="3" translatable="yes">Zeile 12</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 12</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 12</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 11</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 12</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">elektr. übermittelt</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">elektr. übermittelt</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">KrankGesetzOhneKrankengeld</col>
+        <col id="1" translatable="yes">Beiträge zur gesetzlichen Kranken- und Pflegeversicherung</col>
+        <col id="2" translatable="yes">Beiträge, aus denen sich kein Anspruch auf Krankengeld ergibt</col>
+        <col id="3" translatable="yes">Zeile 14</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 14</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 14</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 12</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 13</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">elektr. übermittelt</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">elektr. übermittelt</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">PflegeGesetz</col>
+        <col id="1" translatable="yes">Beiträge zur gesetzlichen Kranken- und Pflegeversicherung</col>
+        <col id="2" translatable="yes">Arbeitnehmerbeiträge zu sozialen Pflegeversicherungen laut der Lohnsteuerbescheinigung</col>
+        <col id="3" translatable="yes">Zeile 15</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 15</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 15</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 13</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 14</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">elektr. übermittelt</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">elektr. übermittelt</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">KrankPflegeGesetzErstattet</col>
+        <col id="1" translatable="yes">Beiträge zur gesetzlichen Kranken- und Pflegeversicherung</col>
+        <col id="2" translatable="yes">Von der Kranken- und / oder sozialen Pflegeversicherung erstattete Beiträge</col>
+        <col id="3" translatable="yes">Zeile 16</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 16</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 16</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 14</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 15</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">elektr. übermittelt</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">elektr. übermittelt</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">KrankPflegeGesetzErstattetOhneKrankentagegeld</col>
+        <col id="1" translatable="yes">Beiträge zur gesetzlichen Kranken- und Pflegeversicherung</col>
+        <col id="2" translatable="yes">Beiträge zur Krankenversicherung, aus denen sich kein Anspruch auf Krankengeld ergibt, und zur sozialen Pflegeversicherung</col>
+        <col id="3" translatable="yes">Zeile 17</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 17</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 17</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 15</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 16</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">elektr. übermittelt</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">elektr. übermittelt</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">KrankGesetzZusatz</col>
+        <col id="1" translatable="yes">Beiträge zur gesetzlichen Kranken- und Pflegeversicherung</col>
+        <col id="2" translatable="yes">Beiträge zu Krankenversicherungen, die als Zusatzbeitrag geleistet wurden</col>
+        <col id="3" translatable="yes">Zeile 13</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 13</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 13</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">nicht enthalten</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">nicht enthalten</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">elektr. übermittelt</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">elektr. übermittelt</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">KrankGesetzFreiwillig</col>
+        <col id="1" translatable="yes">Beiträge zur gesetzlichen Kranken- und Pflegeversicherung</col>
+        <col id="2" translatable="yes">Anderweitige Beiträge zu Krankenversicherungen (z. B. bei Rentnern und freiwillig gesetzlich versicherten Selbstzahlern)</col>
+        <col id="3" translatable="yes">Zeile 18</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 18</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 18</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 16</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 17</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">elektr. übermittelt</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">elektr. übermittelt</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">KrankGesetzFreiwilligOhneKrankentagegeld</col>
+        <col id="1" translatable="yes">Beiträge zur gesetzlichen Kranken- und Pflegeversicherung</col>
+        <col id="2" translatable="yes">Anderweitige Beiträge zur Krankenversicherung, aus denen sich ein Anspruch auf Krankengeld ergibt</col>
+        <col id="3" translatable="yes">Zeile 20</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 20</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 20</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 17</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 18</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">elektr. übermittelt</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">elektr. übermittelt</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">KrankGesetzFreiwilligZusatz</col>
+        <col id="1" translatable="yes">Beiträge zur gesetzlichen Kranken- und Pflegeversicherung</col>
+        <col id="2" translatable="yes">Anderweitige Beiträge zu Krankenversicherungen, die als Zusatzbeitrag geleistet wurden</col>
+        <col id="3" translatable="yes">Zeile 19</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 19</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 19</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">nicht enthalten</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">nicht enthalten</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">elektr. übermittelt</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">elektr. übermittelt</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">PflegeGesetzFreiwillig</col>
+        <col id="1" translatable="yes">Beiträge zur gesetzlichen Kranken- und Pflegeversicherung</col>
+        <col id="2" translatable="yes">Anderweitige Beiträge zu Pflegeversicherungen (z. B. bei Rentnern und freiwillig gesetzlich versicherten Selbstzahlern)</col>
+        <col id="3" translatable="yes">Zeile 21</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 21</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 21</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 18</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 19</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">elektr. übermittelt</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">elektr. übermittelt</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">KrankPflegeGesetzFreiwilligErstattet</col>
+        <col id="1" translatable="yes">Beiträge zur gesetzlichen Kranken- und Pflegeversicherung</col>
+        <col id="2" translatable="yes">Von der Kranken- und / oder sozialen Pflegeversicherung erstattete anderweitige Beiträge</col>
+        <col id="3" translatable="yes">Zeile 22</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 22</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 22</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 19</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 20</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">elektr. übermittelt</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">elektr. übermittelt</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">KrankPflegeGesetzFreiwilligErstattetOhneKrankentagegeld</col>
+        <col id="1" translatable="yes">Beiträge zur gesetzlichen Kranken- und Pflegeversicherung</col>
+        <col id="2" translatable="yes">Anderweitige erstattete Beiträge zur Krankenversicherung, aus denen sich ein Anspruch auf Krankengeld ergibt</col>
+        <col id="3" translatable="yes">Zeile 23</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 23</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 23</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 20</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 21</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">elektr. übermittelt</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">elektr. übermittelt</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">KrankGesetzFreiwilligZuschuss</col>
+        <col id="1" translatable="yes">Beiträge zur gesetzlichen Kranken- und Pflegeversicherung</col>
+        <col id="2" translatable="yes">Zuschuss zu den anderweitigen Beiträgen (z. B. von der Deutschen Rentenversicherung)</col>
+        <col id="3" translatable="yes">Zeile 24</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 24</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 24</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 21</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 22</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">elektr. übermittelt</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">elektr. übermittelt</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">KrankGesetzAusland</col>
+        <col id="1" translatable="yes">Beiträge zur gesetzlichen Kranken- und Pflegeversicherung</col>
+        <col id="2" translatable="yes">Beiträge zu einer ausländischen Krankenversicherung, die mit einer inländischen gesetzlichen Krankenversicherung vergleichbar ist</col>
+        <col id="3" translatable="yes">Zeile 25</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 25</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 25</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 31</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 31</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">elektr. übermittelt</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">elektr. übermittelt</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">KrankGesetzAuslandOhneKrankentagegeld</col>
+        <col id="1" translatable="yes">Beiträge zur gesetzlichen Kranken- und Pflegeversicherung</col>
+        <col id="2" translatable="yes">Beiträge zur ausländischen Krankenversicherung, aus denen sich kein Anspruch auf Krankengeld ergibt</col>
+        <col id="3" translatable="yes">Zeile 26</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 26</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 26</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 32</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 32</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">elektr. übermittelt</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">elektr. übermittelt</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">PflegeGesetzAusland</col>
+        <col id="1" translatable="yes">Beiträge zur gesetzlichen Kranken- und Pflegeversicherung</col>
+        <col id="2" translatable="yes">Beiträge zu einer ausländischen sozialen Pflegeversicherung, die mit einer inländischen gesetzlichen Pflegeversicherung vergleichbar ist</col>
+        <col id="3" translatable="yes">Zeile 27</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 27</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 27</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 33</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 33</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">elektr. übermittelt</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">elektr. übermittelt</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">KrankPflegeGesetzAuslandErstattet	</col>
+        <col id="1" translatable="yes">Beiträge zur gesetzlichen Kranken- und Pflegeversicherung</col>
+        <col id="2" translatable="yes">Von der ausländischen Kranken- und / oder sozialen Pflegeversicherung erstattete Beiträge</col>
+        <col id="3" translatable="yes">Zeile 28</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 28</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 28</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 34</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 34</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">elektr. übermittelt</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">elektr. übermittelt</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">KrankPflegeGesetzAuslandErstattetOhneKrankentagegeld</col>
+        <col id="1" translatable="yes">Beiträge zur gesetzlichen Kranken- und Pflegeversicherung</col>
+        <col id="2" translatable="yes">Von der ausländischen Kranken- und / oder sozialen Pflegeversicherung erstattete Beiträge, aus denen sich kein Anspruch auf Krankengeld ergibt, und zur sozialen Pflegeversicherung
+</col>
+        <col id="3" translatable="yes">Zeile 29</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 29</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 29</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 35</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 35</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">elektr. übermittelt</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">elektr. übermittelt</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">KrankGesetzSonst</col>
+        <col id="1" translatable="yes">Beiträge zur gesetzlichen Kranken- und Pflegeversicherung</col>
+        <col id="2" translatable="yes">Über die Basisabsicherung hinausgehende Beiträge zu Krankenversicherungen (z. B. für Wahlleistungen, Zusatzversicherung) abzüglich erstatteter Beiträge</col>
+        <col id="3" translatable="yes">Zeile 30</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 30</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 30</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 36</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 36</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">elektr. übermittelt</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">elektr. übermittelt</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">KrankPrivat</col>
+        <col id="1" translatable="yes">Beiträge zur privaten Kranken- und Pflegeversicherung</col>
+        <col id="2" translatable="yes">Beiträge zu Krankenversicherungen (nur Basisabsicherung, keine Wahlleistungen) </col>
+        <col id="3" translatable="yes">Zeile 31</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 31</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 31</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 23</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 24</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">elektr. übermittelt</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">elektr. übermittelt</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">PflegePrivat</col>
+        <col id="1" translatable="yes">Beiträge zur privaten Kranken- und Pflegeversicherung</col>
+        <col id="2" translatable="yes">Beiträge zu Pflege-Pflichtversicherungen</col>
+        <col id="3" translatable="yes">Zeile 32</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 32</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 32</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 24</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 25</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">elektr. übermittelt</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">elektr. übermittelt</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">KrankPflegePrivatErstattet</col>
+        <col id="1" translatable="yes">Beiträge zur privaten Kranken- und Pflegeversicherung</col>
+        <col id="2" translatable="yes">Von der privaten Kranken- und / oder Pflege-Pflichtversicherung erstattete Beiträge</col>
+        <col id="3" translatable="yes">Zeile 33</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 33</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 33</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 25</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 26</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">elektr. übermittelt</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">elektr. übermittelt</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">KrankPflegePrivatZuschuss</col>
+        <col id="1" translatable="yes">Beiträge zur privaten Kranken- und Pflegeversicherung</col>
+        <col id="2" translatable="yes">Zuschuss von dritter Seite zu den Beiträgen (z. B. von der Deutschen Rentenversicherung)</col>
+        <col id="3" translatable="yes">Zeile 34</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 34</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 34</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 26</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 27</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">elektr. übermittelt</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">elektr. übermittelt</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">KrankPrivatZusatz</col>
+        <col id="1" translatable="yes">Beiträge zur privaten Kranken- und Pflegeversicherung</col>
+        <col id="2" translatable="yes">Über die Basisabsicherung hinausgehende Beiträge zu Krankenversicherungen (z. B. für Wahlleistungen, Zusatzversicherung) abzüglich erstatteter Beiträge</col>
+        <col id="3" translatable="yes">Zeile 35a</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 35a</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 35a</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 27</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 28</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">elektr. übermittelt</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">elektr. übermittelt</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">KrankPrivatZusatzErstattet</col>
+        <col id="1" translatable="yes">Beiträge zur privaten Kranken- und Pflegeversicherung</col>
+        <col id="2" translatable="yes">Von der privaten Kranken- und / oder Pflege-Pflichtversicherung erstattete Beiträge zur über die Basisabsicherung hinausgehende Krankenversicherungen (z. B. für Wahlleistungen, Zusatzversicherung)</col>
+        <col id="3" translatable="yes">Zeile 35b</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 35b</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 35b</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 27b</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 28b</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">elektr. übermittelt</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">elektr. übermittelt</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">PflegePrivatZusatz</col>
+        <col id="1" translatable="yes">Beiträge zur privaten Kranken- und Pflegeversicherung</col>
+        <col id="2" translatable="yes">Beiträge (abzüglich erstatteter Beiträge) zu zusätzlichen Pflegeversicherungen (ohne Pflege-Pflichtversicherung)</col>
+        <col id="3" translatable="yes">Zeile 36</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 36</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 36</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 28</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 29</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">elektr. übermittelt</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">elektr. übermittelt</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">KrankGesetzZuschussAG</col>
+        <col id="1" translatable="yes">Steuerfreie Arbeitgeberzuschüsse</col>
+        <col id="2" translatable="yes">Steuerfreie Arbeitgeberzuschüsse zur gesetzlichen Krankenversicherung laut Lohnsteuerbescheinigung</col>
+        <col id="3" translatable="yes">Zeile 37</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 37</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 37</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 37</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 37</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">elektr. übermittelt</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">elektr. übermittelt</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">KrankPrivatZuschussAG</col>
+        <col id="1" translatable="yes">Steuerfreie Arbeitgeberzuschüsse</col>
+        <col id="2" translatable="yes">Steuerfreie Arbeitgeberzuschüsse zur privaten Krankenversicherung laut Lohnsteuerbescheinigung</col>
+        <col id="3" translatable="yes">Zeile 38</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 38</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 38</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 38</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 38</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">elektr. übermittelt</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">elektr. übermittelt</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">PflegeGesetzZuschussAG</col>
+        <col id="1" translatable="yes">Steuerfreie Arbeitgeberzuschüsse</col>
+        <col id="2" translatable="yes">Steuerfreie Arbeitgeberzuschüsse zur gesetzlichen Pflegeversicherung laut Lohnsteuerbescheinigung</col>
+        <col id="3" translatable="yes">Zeile 39</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 39</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 39</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 39</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 39</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">elektr. übermittelt</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">elektr. übermittelt</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">KrankPrivatAnderePersonBasis</col>
+        <col id="1" translatable="yes">Als Versicherungsnehmer für andere Personen übernommene Kranken- und Pflegeversicherungsbeiträge</col>
+        <col id="2" translatable="yes">Beiträge (abzüglich steuerfreier Zuschüsse) zu privaten Krankenversicherungen (nur Basisabsicherung, keine Wahlleistungen)</col>
+        <col id="3" translatable="yes">Zeile 42</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 42</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 42</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 42</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 42</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">elektr. übermittelt</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">elektr. übermittelt</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">PflegePrivatAnderePerson</col>
+        <col id="1" translatable="yes">Als Versicherungsnehmer für andere Personen übernommene Kranken- und Pflegeversicherungsbeiträge</col>
+        <col id="2" translatable="yes">Beiträge (abzüglich steuerfreier Zuschüsse) zu Pflege-Pflichtversicherungen</col>
+        <col id="3" translatable="yes">Zeile 43</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 43</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 43</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 43</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 43</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">elektr. übermittelt</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">elektr. übermittelt</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">KrankPflegePrivatAnderePersonErstattet</col>
+        <col id="1" translatable="yes">Als Versicherungsnehmer für andere Personen übernommene Kranken- und Pflegeversicherungsbeiträge</col>
+        <col id="2" translatable="yes">Von der privaten Kranken- und / oder Pflege-Pflichtversicherung erstattete Beiträge</col>
+        <col id="3" translatable="yes">Zeile 44</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 44</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 44</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 44</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 44</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">elektr. übermittelt</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">elektr. übermittelt</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">KrankPflegePrivatAnderePersonSonst</col>
+        <col id="1" translatable="yes">Als Versicherungsnehmer für andere Personen übernommene Kranken- und Pflegeversicherungsbeiträge</col>
+        <col id="2" translatable="yes">Beiträge (abzüglich erstatteter Beiträge) zu privaten Kranken- und / oder Pflegeversicherungen (ohne Basisabsicherung, z. B. für Wahlleistungen, Zusatzversicherung)</col>
+        <col id="3" translatable="yes">Zeile 45</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 45</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 45</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 45</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 45</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">elektr. übermittelt</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">elektr. übermittelt</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">ArbeitslosGesetz</col>
+        <col id="1" translatable="yes">Weitere sonstige Vorsorgeaufwendungen</col>
+        <col id="2" translatable="yes">Arbeitnehmerbeiträge zur Arbeitslosenversicherung laut Lohnsteuerbescheinigung</col>
+        <col id="3" translatable="yes">Zeile 46</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 46</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 46</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 46</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 46</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">elektr. übermittelt</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">elektr. übermittelt</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">KrankPflegeAnderweitig</col>
+        <col id="1" translatable="yes">Weitere sonstige Vorsorgeaufwendungen</col>
+        <col id="2" translatable="yes">Beiträge (abzüglich steuerfreier Zuschüsse und erstatteter Beiträge) zu Kranken- und Pflegeversicherungen (Gesamtbetrag) (nur einzutragen, wenn Sie der Datenübermittlung widersprochen haben)</col>
+        <col id="3" translatable="yes">Zeile 47</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 47</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 47</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 47</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 47</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">elektr. übermittelt</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">elektr. übermittelt</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">ArbeitslosAnderweitig</col>
+        <col id="1" translatable="yes">Weitere sonstige Vorsorgeaufwendungen</col>
+        <col id="2" translatable="yes">Beiträge (abzüglich steuerfreier Zuschüsse und erstatteter Beiträge) zu Versicherungen gegen Arbeitslosigkeit (Gesamtbetrag) (nur einzutragen, wenn Sie der Datenübermittlung widersprochen haben)</col>
+        <col id="3" translatable="yes">Zeile 48</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 48</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 48</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 48</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 48</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">elektr. übermittelt</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">elektr. übermittelt</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">ErwerbBerufUnfähigkeit</col>
+        <col id="1" translatable="yes">Weitere sonstige Vorsorgeaufwendungen</col>
+        <col id="2" translatable="yes">Beiträge (abzüglich steuerfreier Zuschüsse und erstatteter Beiträge) zu freiwilligen eigenständigen Erwerbs- und Berufsunfähigkeitsversicherungen</col>
+        <col id="3" translatable="yes">Zeile 49</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 49</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 49</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 49</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 49</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">elektr. übermittelt</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">elektr. übermittelt</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">UnfallHaftRisikoVersicherungNurTodesfall</col>
+        <col id="1" translatable="yes">Weitere sonstige Vorsorgeaufwendungen</col>
+        <col id="2" translatable="yes">Beiträge (abzüglich steuerfreier Zuschüsse und erstatteter Beiträge) zu Unfall- und Haftpflichtversicherungen sowie Risikoversicherungen, die nur für den Todesfall eine Leistung vorsehen</col>
+        <col id="3" translatable="yes">Zeile 50</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 50</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 50</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 50</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 50</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">elektr. übermittelt</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">elektr. übermittelt</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">RentePrivatKapitalwahlrecht</col>
+        <col id="1" translatable="yes">Weitere sonstige Vorsorgeaufwendungen</col>
+        <col id="2" translatable="yes">Beiträge (abzüglich steuerfreier Zuschüsse und erstatteter Beiträge) zu Rentenversicherungen mit Kapitalwahlrecht und / oder Kapitallebensversicherungen mit einer Laufzeit von mindestens 12 Jahren sowie einem Laufzeitbeginn und der ersten Beitragszahlung vor dem 1.1.2005</col>
+        <col id="3" translatable="yes">Zeile 51</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 51</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 51</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 51</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 51</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">elektr. übermittelt</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">elektr. übermittelt</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">RentePrivatOhneKapitalwahlrecht</col>
+        <col id="1" translatable="yes">Weitere sonstige Vorsorgeaufwendungen</col>
+        <col id="2" translatable="yes">Beiträge (abzüglich steuerfreier Zuschüsse und erstatteter Beiträge) zu Rentenversicherungen ohne Kapitalwahlrecht mit Laufzeitbeginn und erster Beitragszahlung vor dem 1.1.2005 (auch steuerpflichtige Beiträge zu Versorgungs- und Pensionskassen)</col>
+        <col id="3" translatable="yes">Zeile 52</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 52</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 52</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 52</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 52</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">elektr. übermittelt</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">elektr. übermittelt</col> <!-- line 2018 -->
+      </row>
+    </data>
+  </object>
+  <object class="GtkListStore" id="listTaxItemColumnsEinkommensteuerAnlageVorsorge">
+    <columns>
+      <column type="gchararray"/> <!-- item ID -->
+      <column type="gchararray"/> <!-- item column -->
+      <column type="gchararray"/> <!-- column name -->
+    </columns>
+    <data>
+      <row>
+        <col id="0" translatable="yes">RenteGesetzAN</col>
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">stpfl. Person/Ehemann</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">RenteGesetzAN</col>
+        <col id="1" translatable="yes">02</col>
+        <col id="2" translatable="yes">Ehefrau</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">RenteLandwirtschaft</col>
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">stpfl. Person/Ehemann</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">RenteLandwirtschaft</col>
+        <col id="1" translatable="yes">02</col>
+        <col id="2" translatable="yes">Ehefrau</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">RenteGesetzSonst</col>
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">stpfl. Person/Ehemann</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">RenteGesetzSonst</col>
+        <col id="1" translatable="yes">02</col>
+        <col id="2" translatable="yes">Ehefrau</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">RenteBasis</col>
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">stpfl. Person/Ehemann</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">RenteBasis</col>
+        <col id="1" translatable="yes">02</col>
+        <col id="2" translatable="yes">Ehefrau</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">RenteGesetzAG</col>
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">stpfl. Person/Ehemann</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">RenteGesetzAG</col>
+        <col id="1" translatable="yes">02</col>
+        <col id="2" translatable="yes">Ehefrau</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">RenteGesetzAGSonst</col>
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">stpfl. Person/Ehemann</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">RenteGesetzAGSonst</col>
+        <col id="1" translatable="yes">02</col>
+        <col id="2" translatable="yes">Ehefrau</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">RenteGesetzPauschalGeringBesch</col>
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">stpfl. Person/Ehemann</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">RenteGesetzPauschalGeringBesch</col>
+        <col id="1" translatable="yes">02</col>
+        <col id="2" translatable="yes">Ehefrau</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">KrankGesetz</col>
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">stpfl. Person/Ehemann</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">KrankGesetz</col>
+        <col id="1" translatable="yes">02</col>
+        <col id="2" translatable="yes">Ehefrau</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">KrankGesetzZusatz</col>
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">stpfl. Person/Ehemann</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">KrankGesetzZusatz</col>
+        <col id="1" translatable="yes">02</col>
+        <col id="2" translatable="yes">Ehefrau</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">KrankGesetzOhneKrankengeld</col>
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">stpfl. Person/Ehemann</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">KrankGesetzOhneKrankengeld</col>
+        <col id="1" translatable="yes">02</col>
+        <col id="2" translatable="yes">Ehefrau</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">PflegeGesetz</col>
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">stpfl. Person/Ehemann</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">PflegeGesetz</col>
+        <col id="1" translatable="yes">02</col>
+        <col id="2" translatable="yes">Ehefrau</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">KrankPflegeGesetzErstattet</col>
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">stpfl. Person/Ehemann</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">KrankPflegeGesetzErstattet</col>
+        <col id="1" translatable="yes">02</col>
+        <col id="2" translatable="yes">Ehefrau</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">KrankPflegeGesetzErstattetOhneKrankentagegeld</col>
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">stpfl. Person/Ehemann</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">KrankPflegeGesetzErstattetOhneKrankentagegeld</col>
+        <col id="1" translatable="yes">02</col>
+        <col id="2" translatable="yes">Ehefrau</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">KrankGesetzFreiwillig</col>
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">stpfl. Person/Ehemann</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">KrankGesetzFreiwillig</col>
+        <col id="1" translatable="yes">02</col>
+        <col id="2" translatable="yes">Ehefrau</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">KrankGesetzFreiwilligZusatz</col>
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">stpfl. Person/Ehemann</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">KrankGesetzFreiwilligZusatz</col>
+        <col id="1" translatable="yes">02</col>
+        <col id="2" translatable="yes">Ehefrau</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">KrankGesetzFreiwilligOhneKrankentagegeld</col>
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">stpfl. Person/Ehemann</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">KrankGesetzFreiwilligOhneKrankentagegeld</col>
+        <col id="1" translatable="yes">02</col>
+        <col id="2" translatable="yes">Ehefrau</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">PflegeGesetzFreiwillig</col>
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">stpfl. Person/Ehemann</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">PflegeGesetzFreiwillig</col>
+        <col id="1" translatable="yes">02</col>
+        <col id="2" translatable="yes">Ehefrau</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">KrankPflegeGesetzFreiwilligErstattet</col>
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">stpfl. Person/Ehemann</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">KrankPflegeGesetzFreiwilligErstattet</col>
+        <col id="1" translatable="yes">02</col>
+        <col id="2" translatable="yes">Ehefrau</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">KrankPflegeGesetzFreiwilligErstattetOhneKrankentagegeld</col>
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">stpfl. Person/Ehemann</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">KrankPflegeGesetzFreiwilligErstattetOhneKrankentagegeld</col>
+        <col id="1" translatable="yes">02</col>
+        <col id="2" translatable="yes">Ehefrau</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">KrankGesetzFreiwilligZuschuss</col>
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">stpfl. Person/Ehemann</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">KrankGesetzFreiwilligZuschuss</col>
+        <col id="1" translatable="yes">02</col>
+        <col id="2" translatable="yes">Ehefrau</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">KrankGesetzAusland</col>
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">stpfl. Person/Ehemann</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">KrankGesetzAusland</col>
+        <col id="1" translatable="yes">02</col>
+        <col id="2" translatable="yes">Ehefrau</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">KrankGesetzAuslandOhneKrankentagegeld</col>
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">stpfl. Person/Ehemann</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">KrankGesetzAuslandOhneKrankentagegeld</col>
+        <col id="1" translatable="yes">02</col>
+        <col id="2" translatable="yes">Ehefrau</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">PflegeGesetzAusland</col>
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">stpfl. Person/Ehemann</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">PflegeGesetzAusland</col>
+        <col id="1" translatable="yes">02</col>
+        <col id="2" translatable="yes">Ehefrau</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">KrankPflegeGesetzAuslandErstattet</col>
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">stpfl. Person/Ehemann</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">KrankPflegeGesetzAuslandErstattet</col>
+        <col id="1" translatable="yes">02</col>
+        <col id="2" translatable="yes">Ehefrau</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">KrankPflegeGesetzAuslandErstattetOhneKrankentagegeld</col>
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">stpfl. Person/Ehemann</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">KrankPflegeGesetzAuslandErstattetOhneKrankentagegeld</col>
+        <col id="1" translatable="yes">02</col>
+        <col id="2" translatable="yes">Ehefrau</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">KrankGesetzSonst</col>
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">stpfl. Person/Ehemann</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">KrankGesetzSonst</col>
+        <col id="1" translatable="yes">02</col>
+        <col id="2" translatable="yes">Ehefrau</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">KrankPrivat</col>
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">stpfl. Person/Ehemann</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">KrankPrivat</col>
+        <col id="1" translatable="yes">02</col>
+        <col id="2" translatable="yes">Ehefrau</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">PflegePrivat</col>
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">stpfl. Person/Ehemann</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">PflegePrivat</col>
+        <col id="1" translatable="yes">02</col>
+        <col id="2" translatable="yes">Ehefrau</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">KrankPflegePrivatErstattet</col>
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">stpfl. Person/Ehemann</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">KrankPflegePrivatErstattet</col>
+        <col id="1" translatable="yes">02</col>
+        <col id="2" translatable="yes">Ehefrau</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">KrankPflegePrivatZuschuss</col>
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">stpfl. Person/Ehemann</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">KrankPflegePrivatZuschuss</col>
+        <col id="1" translatable="yes">02</col>
+        <col id="2" translatable="yes">Ehefrau</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">KrankPrivatZusatz</col>
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">stpfl. Person/Ehemann</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">KrankPrivatZusatz</col>
+        <col id="1" translatable="yes">02</col>
+        <col id="2" translatable="yes">Ehefrau</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">KrankPrivatZusatzErstattet</col>
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">stpfl. Person/Ehemann</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">KrankPrivatZusatzErstattet</col>
+        <col id="1" translatable="yes">02</col>
+        <col id="2" translatable="yes">Ehefrau</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">PflegePrivatZusatz</col>
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">stpfl. Person/Ehemann</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">PflegePrivatZusatz</col>
+        <col id="1" translatable="yes">02</col>
+        <col id="2" translatable="yes">Ehefrau</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">KrankGesetzZuschussAG</col>
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">stpfl. Person/Ehemann</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">KrankGesetzZuschussAG</col>
+        <col id="1" translatable="yes">02</col>
+        <col id="2" translatable="yes">Ehefrau</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">KrankPrivatZuschussAG</col>
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">stpfl. Person/Ehemann</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">KrankPrivatZuschussAG</col>
+        <col id="1" translatable="yes">02</col>
+        <col id="2" translatable="yes">Ehefrau</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">PflegeGesetzZuschussAG</col>
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">stpfl. Person/Ehemann</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">PflegeGesetzZuschussAG</col>
+        <col id="1" translatable="yes">02</col>
+        <col id="2" translatable="yes">Ehefrau</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">KrankPrivatAnderePersonBasis</col>
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">stpfl. Person/Ehegatten</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">PflegePrivatAnderePerson</col>
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">stpfl. Person/Ehegatten</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">KrankPflegePrivatAnderePersonErstattet</col>
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">stpfl. Person/Ehegatten</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">KrankPflegePrivatAnderePersonSonst</col>
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">stpfl. Person/Ehegatten</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">ArbeitslosGesetz</col>
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">stpfl. Person/Ehemann</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">ArbeitslosGesetz</col>
+        <col id="1" translatable="yes">02</col>
+        <col id="2" translatable="yes">Ehefrau</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">KrankPflegeAnderweitig</col>
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">stpfl. Person/Ehemann</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">KrankPflegeAnderweitig</col>
+        <col id="1" translatable="yes">02</col>
+        <col id="2" translatable="yes">Ehefrau</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">ArbeitslosAnderweitig</col>
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">stpfl. Person/Ehegatten</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">ErwerbBerufUnfähigkeit</col>
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">stpfl. Person/Ehegatten</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">UnfallHaftRisikoVersicherungNurTodesfall</col>
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">stpfl. Person/Ehegatten</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">RentePrivatKapitalwahlrecht</col>
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">stpfl. Person/Ehegatten</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">RentePrivatOhneKapitalwahlrecht</col>
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">stpfl. Person/Ehegatten</col>
+      </row>
+    </data>
+  </object>
+</interface>

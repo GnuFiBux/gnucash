@@ -776,6 +776,152 @@ gnc_ui_tax_table_window_new (GtkWindow *parent, QofBook *book)
     return ttw;
 }
 
+/***************************************************************\
+ * gnc_ui_account_get_tax_form_line                            *
+ *                                                             *
+ * This procedure is called by the tax editor info report.     *
+ * It is used to find out the line in a given form for a given *
+ * tax item in a given tax year.                               *
+ * It will read the information from the corresponding .glade  *
+ * files.                                                      *
+\***************************************************************/
+const gchar *
+gnc_ui_account_get_tax_form_line (const gchar *year,
+                                  const gchar *country,
+                                  const gchar *tax_type,
+                                  const gchar *form,
+                                  const gchar *item)
+{
+    GtkBuilder *builder;
+    GtkListStore *list_store;
+    GtkTreeIter iter;
+    gboolean valid;
+    gchar *data_string;
+    gint index = -1;
+
+    builder = gtk_builder_new();
+    /***********************************************\
+     * look up the year entry in the TaxYears file *
+    \***********************************************/
+    if (!gnc_builder_add_from_file (
+        builder,
+        g_strdup_printf("dialog-tax-info-editor-%s-TaxYears.glade", country),
+        g_strdup_printf("listTaxYears-%s", country)))
+        return (g_strdup_printf ("NoYearFile-%s", country));
+
+    list_store = GTK_LIST_STORE (
+                     gtk_builder_get_object (
+                         builder,
+                         g_strdup_printf("listTaxYears-%s", country)));
+
+    valid = gtk_tree_model_get_iter_first (GTK_TREE_MODEL(list_store), &iter);
+    while (valid)
+    {
+		/**************************************\
+		 * get the year string from this iter *
+		 \*************************************/
+        gtk_tree_model_get (GTK_TREE_MODEL(list_store), &iter,
+                            0, /* column for years */
+                            &data_string,
+                            -1);
+
+        if (g_strcmp0 (data_string, year))
+        {
+		   /*******************************************************\
+		    * this is not the wanted year, so go to the next iter *
+		   \*******************************************************/
+            valid = gtk_tree_model_iter_next (
+                        GTK_TREE_MODEL(list_store), &iter);
+        }
+        else
+        {
+		   /*******************************************************\
+		    * Match! Get the index for this year (in the list of  *
+		    * supported tax years as given in the tax years file) *
+		   \*******************************************************/
+            index = (gint) g_ascii_strtoll (
+                     gtk_tree_path_to_string (
+                         gtk_tree_model_get_path (
+                             GTK_TREE_MODEL(list_store), &iter)),
+                    NULL,
+                    0);
+
+            valid = FALSE; /* break the loop */
+        }
+    }
+    if (index < 0 )
+    {
+		/***********************************************\
+		 * there is no line for this item in this year *
+		\***********************************************/
+        g_object_unref (builder);
+        return (g_strdup_printf ("%s-NoLineInYear-%s", item, year));
+    }
+
+    /********************************************\
+     * get the line info from the tax form file *
+    \********************************************/
+    if (!gnc_builder_add_from_file (
+        builder,
+        g_strdup_printf("dialog-tax-info-editor-%s-%s%s.glade",
+                         country, tax_type, form),
+        g_strdup_printf("listTaxItemLines%s%s", tax_type, form)))
+        return (g_strdup_printf ("NoFormFile-%s-%s%s",
+                                  country, tax_type, form));
+
+    list_store = GTK_LIST_STORE (
+                     gtk_builder_get_object (
+                         builder,
+                         g_strdup_printf("listTaxItemLines%s%s",
+                                                tax_type, form)));
+
+    valid = gtk_tree_model_get_iter_first (GTK_TREE_MODEL(list_store), &iter);
+    while (valid)
+    {
+		/******************************************\
+		 * get the tax item string from this iter *
+		 \*****************************************/
+        gtk_tree_model_get (GTK_TREE_MODEL(list_store), &iter,
+                           0, /* column the tax item ID */
+                            &data_string,
+                            -1);
+
+        if (g_strcmp0 (data_string, item))
+        {
+		   /***********************************************************\
+		    * this is not the wanted tax item, so go to the next iter *
+		   \***********************************************************/
+            valid = gtk_tree_model_iter_next (
+                        GTK_TREE_MODEL(list_store), &iter);
+        }
+        else
+        {
+		   /**********************************************************\
+		    * Match! use the index from above to get the line string *
+		    * from this iter                                         *
+		   \**********************************************************/
+            gtk_tree_model_get (GTK_TREE_MODEL(list_store), &iter,
+                                index+3, /* column the selected tax year */
+                                &data_string,
+                               -1);
+
+            valid = FALSE; /* break the loop */
+        }
+    }
+    g_object_unref (builder);
+
+    if (!data_string)
+		/*************************\
+		 * there is no such item *
+		\*************************/
+        return (g_strdup_printf ("%s-NoSuchItem-%s", item, year));
+
+	/**************************\
+	 * return the line string *
+	\**************************/
+    return (g_strdup_printf ("%s", data_string));
+}
+
 /* Destroy a tax-table window */
 void
 gnc_ui_tax_table_window_destroy (TaxTableWindow *ttw)

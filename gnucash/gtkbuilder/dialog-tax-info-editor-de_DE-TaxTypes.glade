@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk+" version="2.24"/>
+  <!-- interface-naming-policy project-wide -->
+  <object class="GtkListStore" id="listTaxTypes-de_DE">
+    <columns>
+      <!-- column-name Forms -->
+      <column type="gchararray"/>
+    </columns>
+    <data>
+      <row>
+        <col id="0" translatable="yes">Einkommensteuer</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">Umsatzsteuer</col>
+      </row>
+    </data>
+  </object>
+</interface>

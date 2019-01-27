@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk+" version="2.24"/>
+  <!-- interface-naming-policy project-wide -->
+  <object class="GtkListStore" id="listTaxItemLinesEinkommensteuerAnlageV">
+    <columns>
+      <column type="gchararray"/><!-- item ID of structure <taxType>-<taxFormID>-<taxItem> -->
+      <column type="gchararray"/><!-- item Text -->
+      <column type="gchararray"/><!-- item help -->
+      <column type="gchararray"/><!-- item line in year 2012 -->
+      <column type="gchararray"/><!-- item line in year 2013 -->
+      <column type="gchararray"/><!-- item line in year 2014 -->
+      <column type="gchararray"/><!-- item line in year 2015 -->
+      <column type="gchararray"/><!-- item line in year 2016 -->
+      <column type="gchararray"/><!-- item line in year 2017 -->
+      <column type="gchararray"/><!-- item line in year 2018 -->
+    </columns>
+    <data>
+      <row>
+        <col id="0" translatable="yes">EinkünfteBebautesGrundstückWohnungen</col>
+        <col id="1" translatable="yes">Mieteinnahmen für Wohnungen</col>
+        <col id="2" translatable="yes">gesamt, ohne Umlagen, ohne Vermietung an Angehörige</col>
+        <col id="3" translatable="yes">Zeile 09</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 09</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 09</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 09</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 09</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">Zeile 09</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">Zeile 09</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">EinkünfteBebautesGrundstückRäume</col>
+        <col id="1" translatable="yes">Mieteinnahmen für andere Räume</col>
+        <col id="2" translatable="yes">Lager, freiberufliche Praxis, o.Ä., nicht Teil von sonstigen Flächen, ohne Umlagen, ohne Umsatzsteuer</col>
+        <col id="3" translatable="yes">Zeile 11</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 11</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 11</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 11</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 11</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">Zeile 11</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">Zeile 11</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">EinkünfteBebautesGrundstückAngehörige</col>
+        <col id="1" translatable="yes">Vermietung an Angehörige</col>
+        <col id="2" translatable="yes">Wohnraum an Angehörige, ohne Umlagen</col>
+        <col id="3" translatable="yes">Zeile 12</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 12</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 12</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 12</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 12</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">Zeile 12</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">Zeile 12</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">EinkünfteBebautesGrundstückAußergewöhnliches</col>
+        <col id="1" translatable="yes">Außergewöhnliche Einnahmen</col>
+        <col id="2" translatable="yes">Verinnahmte Mieten für frühere Jahre / verrechnete Mietkautionen / auf das Kalenderjahr entfallende Mietvorauszahlungen aus Baukostenzuschüssen</col>
+        <col id="3" translatable="yes">Zeile 15</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 15</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 15</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 15</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 15</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">Zeile 15</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">Zeile 15</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">EinkünfteBebautesGrundstückSonstiges</col>
+        <col id="1" translatable="yes">Vermietung von sonstigen Flächen</col>
+        <col id="2" translatable="yes">Garagen, Werbetafeln, Mobilfunkanlagen, etc.</col>
+        <col id="3" translatable="yes">Zeile 16</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 16</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 16</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 16</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 16</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">Zeile 16</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">Zeile 16</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">EinkünfteBebautesGrundstückUmsatzsteuer</col>
+        <col id="1" translatable="yes">Vereinnahmte Umsatzsteuer</col>
+        <col id="2" translatable="yes">Umsatzsteuer aus Mieteinnahmen</col>
+        <col id="3" translatable="yes">Zeile 17</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 17</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 17</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 17</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 17</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">Zeile 17</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">Zeile 17</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">EinkünfteBebautesGrundstückUmsatzsteuerErstattet</col>
+        <col id="1" translatable="yes">Erstattete Umsatzsteuer</col>
+        <col id="2" translatable="yes">Erstattungen vom Finanzamt beispielsweise von Vorsteuer oder aus zu hohen Umsatzsteuervorauszahlungen</col>
+        <col id="3" translatable="yes">Zeile 18</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 18</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 18</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 18</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 18</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">Zeile 18</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">Zeile 18</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">EinkünfteBebautesGrundstückZuschüsse</col>
+        <col id="1" translatable="yes">Zuschüsse</col>
+        <col id="2" translatable="yes">öffentliche Mittel im Zusammenhang mit Erhaltungsaufwendungen oder andere Aufwendungszuschüsse</col>
+        <col id="3" translatable="yes">Zeile 20</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 20</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 20</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 20</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 20</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">Zeile 20</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">Zeile 20</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">EinkünfteBeteiligungenGrundstücksgemeinschaften</col>
+        <col id="1" translatable="yes">Grundstücksgemeinschaften</col>
+        <col id="2" translatable="yes">Anteilige Einkünfte aus Grundstücksgemeinschaften</col>
+        <col id="3" translatable="yes">Zeile 27</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 27</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 27</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 27</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 27</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">Zeile 27</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">Zeile 27</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">EinkünfteBeteiligungenImmobilienfonds</col>
+        <col id="1" translatable="yes">Geschlossene Immobilienfonds</col>
+        <col id="2" translatable="yes">Anteilige Einkünfte aus geschlossenen Immobilienfonds</col>
+        <col id="3" translatable="yes">Zeile 28</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 28</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 28</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 28</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 28</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">Zeile 28</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">Zeile 28</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">EinkünfteBeteiligungenGesellschaften</col>
+        <col id="1" translatable="yes">Gesellschaften i.S.d. §15b EStG</col>
+        <col id="2" translatable="yes">Immobilieninvestitionen, die vom Finanzamt als Steuerstundungsmodell klassifiziert sind</col>
+        <col id="3" translatable="yes">Zeile 29</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 29</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 29</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 29</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 29</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">Zeile 29</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">Zeile 29</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">AndereEinkünfteUntervermietung</col>
+        <col id="1" translatable="yes">Untervermietung</col>
+        <col id="2" translatable="yes">Einnahmen durch Untervermietung von selbst angemieteten Räumen</col>
+        <col id="3" translatable="yes">Zeile 31</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 31</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 31</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 31</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 31</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">Zeile 31</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">Zeile 31</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">AndereEinkünfteUnbebauterGrundstücke</col>
+        <col id="1" translatable="yes">Vermietung und Verpachtung unbebauter Grundstücke</col>
+        <col id="2" translatable="yes">Einkünfte aus Vermietung und Verpachtung ungenauter Grundstücke, von aderem inbeweglichen Vermögen, von Sachinbegriffen sowie aus Überlassung von Rechten</col>
+        <col id="3" translatable="yes">Zeile 32</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 32</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 32</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 32</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 32</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">Zeile 32</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">Zeile 32</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">WerbungskostenAbschreibungen</col>
+        <col id="1" translatable="yes">Abschreibungen</col>
+        <col id="2" translatable="yes">Linear 2% pro Jahr, oder degressiv</col>
+        <col id="3" translatable="yes">Zeile 33</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 33</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 33</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 33</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 33</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">Zeile 33</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">Zeile 33</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">WerbungskostenErhöhteAbschreibungen</col>
+        <col id="1" translatable="yes">Erhöhte Abschreibungen</col>
+        <col id="2" translatable="yes">Erhöhte Absetzungen nach den §§ 7h, 7i EStG, Schutzbaugesetz</col>
+        <col id="3" translatable="yes">Zeile 34</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 34</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 34</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 34</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 34</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">Zeile 34</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">Zeile 34</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">WerbungskostenBeweglicheWirtschaftsgüter</col>
+        <col id="1" translatable="yes">Abschreibungen für bewegliche Wirtschaftsgüter</col>
+        <col id="2" translatable="yes">-</col>
+        <col id="3" translatable="yes">Zeile 35</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 35</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 35</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 35</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 35</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">Zeile 35</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">Zeile 35</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">WerbungskostenSchuldzinsen</col>
+        <col id="1" translatable="yes">Schuldzinsen</col>
+        <col id="2" translatable="yes">ohne Tilgungsbeiträge</col>
+        <col id="3" translatable="yes">Zeile 36</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 36</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 36</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 36</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 36</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">Zeile 36</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">Zeile 36</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">WerbungskostenGeldbeschaffungskosten</col>
+        <col id="1" translatable="yes">Geldbeschaffungskosten</col>
+        <col id="2" translatable="yes">z.B. Schätz-, Notar-, Grundbuchgebühren</col>
+        <col id="3" translatable="yes">Zeile 37</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 37</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 37</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 37</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 37</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">Zeile 37</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">Zeile 37</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">WerbungskostenRentenDauerndeLasten</col>
+        <col id="1" translatable="yes">Renten, dauernde Lasten</col>
+        <col id="2" translatable="yes">Verpflichtungen zur Zahlung von Renten oder dauernden Lasten in Zusammenhang mit den Vermietungseinkünften</col>
+        <col id="3" translatable="yes">Zeile 38</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 38</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 38</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 38</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 38</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">Zeile 38</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">Zeile 38</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">WerbungskostenErhaltungsaufwendungenDirekt</col>
+        <col id="1" translatable="yes">Erhaltungsaufwendungen, direkt</col>
+        <col id="2" translatable="yes">voll abzuziehende Erhaltungsaufwände, die direkt zugeordnet werden können</col>
+        <col id="3" translatable="yes">Zeile 39</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 39</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 39</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 39</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 39</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">Zeile 39</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">Zeile 39</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">WerbungskostenErhaltungsaufwendungenVerhältnismäßig</col>
+        <col id="1" translatable="yes">Erhaltungsaufwendungen, verhältnismäßig</col>
+        <col id="2" translatable="yes">Erhaltungsaufwände, die verhältnismäßig zugeordnet werden können</col>
+        <col id="3" translatable="yes">Zeile 40</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 40</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 40</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 40</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 40</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">Zeile 40</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">Zeile 40</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">WerbungskostenVerwalterkosten</col>
+        <col id="1" translatable="yes">Verwalterkosten</col>
+        <col id="2" translatable="yes">Kosten für einen Hausverwalter gehören nicht zu den umlagefähigen Nebenkosten</col>
+        <col id="3" translatable="yes">Zeile 47</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 47</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 47</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 47</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 47</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">Zeile 47</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">Zeile 47</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">WerbungskostenUmsatzsteuerzahlungen</col>
+        <col id="1" translatable="yes">Umsatzsteuerzahlungen</col>
+        <col id="2" translatable="yes">Nur bei umsatzsteuerpflichtiger Vermietung: an das Finanzamt gezahlte und ggf. verrechnete Umstatzsteuer</col>
+        <col id="3" translatable="yes">Zeile 48</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 48</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 48</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 48</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 48</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">Zeile 48</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">Zeile 48</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">WerbungskostenSonstiges</col>
+        <col id="1" translatable="yes">Sonstiges</col>
+        <col id="2" translatable="yes">-</col>
+        <col id="3" translatable="yes">Zeile 49</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 49</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 49</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 49</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 49</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">Zeile 49</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">Zeile 49</col> <!-- line 2018 -->
+      </row>
+    </data>
+  </object>
+  <object class="GtkListStore" id="listTaxItemColumnsEinkommensteuerAnlageV">
+    <columns>
+      <column type="gchararray"/> <!-- item ID -->
+      <column type="gchararray"/> <!-- item column -->
+      <column type="gchararray"/> <!-- column name -->
+    </columns>
+    <data>
+      <row>
+        <col id="0" translatable="yes">EinkünfteBebautesGrundstückWohnungen</col> <!-- Vermietung/Verpachtung -->
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">stpfl. Person</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">EinkünfteBebautesGrundstückRäume</col> <!-- Vermietung/Verpachtung -->
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">stpfl. Person</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">EinkünfteBebautesGrundstückAngehörige</col> <!-- Vermietung/Verpachtung -->
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">stpfl. Person</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">EinkünfteBebautesGrundstückAußergewöhnliches</col> <!-- Vermietung/Verpachtung -->
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">stpfl. Person</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">EinkünfteBebautesGrundstückSonstiges</col> <!-- Vermietung/Verpachtung -->
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">stpfl. Person</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">EinkünfteBebautesGrundstückUmsatzsteuer</col> <!-- Vermietung/Verpachtung -->
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">stpfl. Person</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">EinkünfteBebautesGrundstückUmsatzsteuerErstattet</col> <!-- Vermietung/Verpachtung -->
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">stpfl. Person</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">EinkünfteBebautesGrundstückZuschüsse</col> <!-- Vermietung/Verpachtung -->
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">stpfl. Person</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">EinkünfteBeteiligungenGrundstücksgemeinschaften</col> <!-- Vermietung/Verpachtung -->
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">stpfl. Person/Ehemann</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">EinkünfteBeteiligungenGrundstücksgemeinschaften</col> <!-- Vermietung/Verpachtung -->
+        <col id="1" translatable="yes">02</col>
+        <col id="2" translatable="yes">Ehefrau</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">EinkünfteBeteiligungenImmobilienfonds</col> <!-- Vermietung/Verpachtung -->
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">stpfl. Person/Ehemann</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">EinkünfteBeteiligungenImmobilienfonds</col> <!-- Vermietung/Verpachtung -->
+        <col id="1" translatable="yes">02</col>
+        <col id="2" translatable="yes">Ehefrau</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">EinkünfteBeteiligungenGesellschaften</col> <!-- Vermietung/Verpachtung -->
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">stpfl. Person/Ehemann</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">EinkünfteBeteiligungenGesellschaften</col> <!-- Vermietung/Verpachtung -->
+        <col id="1" translatable="yes">02</col>
+        <col id="2" translatable="yes">Ehefrau</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">AndereEinkünfteUntervermietung</col> <!-- Vermietung/Verpachtung -->
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">stpfl. Person/Ehemann</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">AndereEinkünfteUntervermietung</col> <!-- Vermietung/Verpachtung -->
+        <col id="1" translatable="yes">02</col>
+        <col id="2" translatable="yes">Ehefrau</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">AndereEinkünfteUnbebauterGrundstücke</col> <!-- Vermietung/Verpachtung -->
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">stpfl. Person/Ehemann</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">AndereEinkünfteUnbebauterGrundstücke</col> <!-- Vermietung/Verpachtung -->
+        <col id="1" translatable="yes">02</col>
+        <col id="2" translatable="yes">Ehefrau</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">WerbungskostenAbschreibungen</col> <!-- Vermietung/Verpachtung -->
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">stpfl. Person</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">WerbungskostenErhöhteAbschreibungen</col> <!-- Vermietung/Verpachtung -->
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">stpfl. Person</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">WerbungskostenBeweglicheWirtschaftsgüter</col> <!-- Vermietung/Verpachtung -->
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">stpfl. Person</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">WerbungskostenSchuldzinsen</col> <!-- Vermietung/Verpachtung -->
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">stpfl. Person</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">WerbungskostenGeldbeschaffungskosten</col> <!-- Vermietung/Verpachtung -->
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">stpfl. Person</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">WerbungskostenRentenDauerndeLasten</col> <!-- Vermietung/Verpachtung -->
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">stpfl. Person</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">WerbungskostenErhaltungsaufwendungenDirekt</col> <!-- Vermietung/Verpachtung -->
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">stpfl. Person</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">WerbungskostenErhaltungsaufwendungenVerhältnismäßig</col> <!-- Vermietung/Verpachtung -->
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">stpfl. Person</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">WerbungskostenVerwalterkosten</col> <!-- Vermietung/Verpachtung -->
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">stpfl. Person</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">WerbungskostenUmsatzsteuerzahlungen</col> <!-- Vermietung/Verpachtung -->
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">stpfl. Person</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">WerbungskostenSonstiges</col> <!-- Vermietung/Verpachtung -->
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">stpfl. Person</col>
+      </row>
+    </data>
+  </object>
+</interface>

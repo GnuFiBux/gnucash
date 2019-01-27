@@ -112,6 +112,7 @@ int      gnc_choose_radio_option_dialog (GtkWidget *parent,
         GList *radio_list);
 
 void     gnc_tax_info_dialog (GtkWidget *parent);
+void     gnc_tax_info_editor (GtkWidget *parent);
 void     gnc_stock_split_dialog (GtkWidget *parent, Account * initial);
 
 typedef enum

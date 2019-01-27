@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk+" version="2.24"/>
+  <!-- interface-naming-policy project-wide -->
+  <object class="GtkListStore" id="listTaxCountries">
+    <columns>
+      <!-- column-name Forms -->
+      <column type="gchararray"/>
+      <column type="gchararray"/>
+    </columns>
+    <data>
+      <row>
+        <col id="0" translatable="yes">Germany</col>
+        <col id="1" translatable="yes">de_DE</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">Xample</col>
+        <col id="1" translatable="yes">x_X</col>
+      </row>
+    </data>
+  </object>
+</interface>

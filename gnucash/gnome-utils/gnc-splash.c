@@ -103,11 +103,11 @@ gnc_show_splash_screen (void)
     /* Allow builder to override the build id (eg distributions may want to
      * print an package source version number (rpm, dpkg,...) instead of our git ref */
     if (g_strcmp0("", GNUCASH_BUILD_ID) != 0)
-        ver_string = g_strdup_printf("%s: %s, %s: %s", _("Version"),
-                                     VERSION, _("Build ID"), GNUCASH_BUILD_ID);
+        ver_string = g_strdup_printf("%s: %s, %s: %s", _("GnuFiBux"),
+                                     _("3.4.1"), _("Build ID"), GNUCASH_BUILD_ID);
     else
-        ver_string = g_strdup_printf("%s: %s, %s: %s%s (%s)", _("Version"),
-                                     VERSION, _("Build ID"), vcs, GNC_VCS_REV,
+        ver_string = g_strdup_printf("%s: %s, %s: %s%s (%s)", _("GnuFiBux"),
+                                     _("3.4.1"), _("Build ID"), vcs, GNC_VCS_REV,
                                      GNC_VCS_REV_DATE);
 
     version = gtk_label_new(NULL);

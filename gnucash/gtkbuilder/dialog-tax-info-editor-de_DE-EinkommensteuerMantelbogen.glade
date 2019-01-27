@@ -1,0 +1,619 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk+" version="2.24"/>
+  <!-- interface-naming-policy project-wide -->
+  <object class="GtkListStore" id="listTaxItemLinesEinkommensteuerMantelbogen">
+    <columns>
+      <column type="gchararray"/><!-- item ID of structure <taxType>-<taxFormID>-<taxItem> -->
+      <column type="gchararray"/><!-- item Text -->
+      <column type="gchararray"/><!-- item help -->
+      <column type="gchararray"/><!-- item line in year 2012 -->
+      <column type="gchararray"/><!-- item line in year 2013 -->
+      <column type="gchararray"/><!-- item line in year 2014 -->
+      <column type="gchararray"/><!-- item line in year 2015 -->
+      <column type="gchararray"/><!-- item line in year 2016 -->
+      <column type="gchararray"/><!-- item line in year 2017 -->
+      <column type="gchararray"/><!-- item line in year 2018 -->
+    </columns>
+    <data>
+      <row>
+        <col id="0" translatable="yes">GezahltVorsorgeRenten</col>
+        <col id="1" translatable="yes">Gezahlte Versorgungsleistungen</col>
+        <col id="2" translatable="yes">Renten</col>
+        <col id="3" translatable="yes">Zeile 41</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 37</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 37</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 36</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 36</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">Zeile 36</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">Zeile 36</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">GezahltVorsorgeDauerndeLasten</col>
+        <col id="1" translatable="yes">Gezahlte Versorgungsleistungen</col>
+        <col id="2" translatable="yes">Dauernde Lasten</col>
+        <col id="3" translatable="yes">Zeile 42</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 38</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 38</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 37</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 37</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">Zeile 37</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">Zeile 37</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">GezahltVorsorgeAusgleich</col>
+        <col id="1" translatable="yes">Gezahlte Versorgungsleistungen</col>
+        <col id="2" translatable="yes">Ausgleichszahlungen im Rahmen des schuldrechtlichen Versorgungsausgleichs</col>
+        <col id="3" translatable="yes">Zeile 43</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 39</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 39</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 38</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 38</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">Zeile 38</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">Zeile 38</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">GezahltVorsorgeUnterhalt</col>
+        <col id="1" translatable="yes">Gezahlte Versorgungsleistungen</col>
+        <col id="2" translatable="yes">Unterhaltszahlungen an den geschiedenen / dauernd getrennt lebenden Ehegatten lt. Anlage U</col>
+        <col id="3" translatable="yes">Zeile 44</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 40</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 40</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 40</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 40</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">Zeile 40</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">Zeile 40</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">GezahltVorsorgeKirchensteuer</col>
+        <col id="1" translatable="yes">Gezahlte Versorgungsleistungen</col>
+        <col id="2" translatable="yes">Kirchensteuer (soweit diese nicht als Zuschlag zur Abgeltungsteuer einbehalten oder gezahlt wurde)</col>
+        <col id="3" translatable="yes">Zeile 46</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 42</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 42</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 42</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 42</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">Zeile 42</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">Zeile 42</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">AufwendungenBAusbildungStPfl</col>
+        <col id="1" translatable="yes">Aufwendungen</col>
+        <col id="2" translatable="yes">Aufwendungen für die eigene Berufsausbildung der stpfl. Person / des Ehemannes</col>
+        <col id="3" translatable="yes">Zeile 47</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 43</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 43</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 43</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 43</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">Zeile 43</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">Zeile 43</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">AufwendungenBAusbildungEhefrau</col>
+        <col id="1" translatable="yes">Aufwendungen</col>
+        <col id="2" translatable="yes">Aufwendungen für die eigene Berufsausbildung der Lebenspartner / Ehefrau</col>
+        <col id="3" translatable="yes">Zeile 48</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 44</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 44</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 44</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 44</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">Zeile 44</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">Zeile 44</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">SpendenBeiträgeSteuerbegZwecke</col>
+        <col id="1" translatable="yes">Spenden und Mitgliedsbeiträge</col>
+        <col id="2" translatable="yes">Förderung steuerbegünstigter Zwecke</col>
+        <col id="3" translatable="yes">Zeile 49</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 45</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 45</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 45</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 45</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">Zeile 45</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">Zeile 45</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">SpendenBeiträgeEU</col>
+        <col id="1" translatable="yes">Spenden und Mitgliedsbeiträge</col>
+        <col id="2" translatable="yes">Zuwendungen an Empfänger im EU- / EWR-Ausland</col>
+        <col id="3" translatable="yes">Zeile 50</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 46</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 46</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 46</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 46</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">Zeile 46</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">Zeile 46</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">SpendenBeiträgeParteien</col>
+        <col id="1" translatable="yes">Spenden und Mitgliedsbeiträge</col>
+        <col id="2" translatable="yes">an politische Parteien (§§ 34g, 10b EStG)</col>
+        <col id="3" translatable="yes">Zeile 51</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 47</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 47</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 47</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 47</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">Zeile 47</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">Zeile 47</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">SpendenBeiträgeWählervereinigung</col>
+        <col id="1" translatable="yes">Spenden und Mitgliedsbeiträge</col>
+        <col id="2" translatable="yes">an unabhängige Wählervereinigungen (§ 34g EStG) </col>
+        <col id="3" translatable="yes">Zeile 52</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 48</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 48</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 48</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 48</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">Zeile 48</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">Zeile 48</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">SpendenBeiträgeSteuerbegZweckeElektro</col>
+        <col id="1" translatable="yes">Spenden und Mitgliedsbeiträge bei denen die Daten elektronisch an die Finanzverwaltung übermittelt wurden</col>
+        <col id="2" translatable="yes">Förderung steuerbegünstigter Zwecke</col>
+        <col id="3" translatable="yes">-</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 49</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 49</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 49</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 49</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">Zeile 49</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">Zeile 49</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">SpendenBeiträgeParteienElektro</col>
+        <col id="1" translatable="yes">Spenden und Mitgliedsbeiträge bei denen die Daten elektronisch an die Finanzverwaltung übermittelt wurden</col>
+        <col id="2" translatable="yes">an politische Parteien (§§ 34g, 10b EStG)</col>
+        <col id="3" translatable="yes">-</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 50</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 50</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 50</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 50</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">Zeile 50</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">Zeile 50</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">SpendenBeiträgeWählervereinigungElektro</col>
+        <col id="1" translatable="yes">Spenden und Mitgliedsbeiträge bei denen die Daten elektronisch an die Finanzverwaltung übermittelt wurden</col>
+        <col id="2" translatable="yes">an unabhängige Wählervereinigungen (§ 34g EStG) </col>
+        <col id="3" translatable="yes">-</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 51</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 51</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 51</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 51</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">Zeile 51</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">Zeile 51</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">SpendenBeiträgeStiftung</col>
+        <col id="1" translatable="yes">Spenden in den Vermögensstock einer Stiftung</col>
+        <col id="2" translatable="yes">geleistete Spenden (lt. beigefügten Bestätigungen / lt. Nachweis Betriebsfinanzamt)</col>
+        <col id="3" translatable="yes">Zeile 53</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 52</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 52</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 52</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 52</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">Zeile 52</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">Zeile 52</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">SpendenBeiträgeStiftungElektro</col>
+        <col id="1" translatable="yes">Spenden in den Vermögensstock einer Stiftung bei denen die Daten elektronisch an die Finanzverwaltung übermittelt wurden</col>
+        <col id="2" translatable="yes">geleistete Spenden (lt. beigefügten Bestätigungen / lt. Nachweis Betriebsfinanzamt)</col>
+        <col id="3" translatable="yes">-</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 53</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 53</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 53</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 53</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">Zeile 53</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">Zeile 53</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">SpendenBeiträgeStiftungEU</col>
+        <col id="1" translatable="yes">Spenden in den Vermögensstock einer Stiftung</col>
+        <col id="2" translatable="yes">enthaltene Spenden an Empfänger im EU- / EWR-Ausland</col>
+        <col id="3" translatable="yes">Zeile 54</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 54</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 54</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 54</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 54</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">Zeile 54</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">Zeile 54</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">SpendenBeiträgeStiftungDiesesJahr</col>
+        <col id="1" translatable="yes">Spenden in den Vermögensstock einer Stiftung</col>
+        <col id="2" translatable="yes">Spenden, die berücksichtigt werden sollen</col>
+        <col id="3" translatable="yes">Zeile 55</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 55</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 55</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 55</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 55</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">Zeile 55</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">Zeile 55</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">SpendenBeiträgeStiftungVorjahre</col>
+        <col id="1" translatable="yes">Spenden in den Vermögensstock einer Stiftung</col>
+        <col id="2" translatable="yes">zu berücksichtigende Spenden aus Vorjahren in den Vermögensstock einer Stiftung, die bisher noch nicht berücksichtigt wurden</col>
+        <col id="3" translatable="yes">Zeile 56</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 56</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 56</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 56</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 56</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">Zeile 56</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">Zeile 56</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">Belastungen</col>
+        <col id="1" translatable="yes">Außergewöhnliche Belastungen abzüglich Erstattungen</col>
+        <col id="2" translatable="yes">Andere außergewöhnliche Belastungen (z. B. Ehescheidungskosten, Fahrtkosten behinderter Menschen, Krankheitskosten, Kurkosten, Pflegekosten)</col>
+        <col id="3" translatable="yes">Zeile 70</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 70</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 70</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 67</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 67</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">Zeile 67</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">Zeile 67</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">HaushaltMinijobs</col>
+        <col id="1" translatable="yes">Haushaltsnahe Beschäftigungsverhältnisse, Dienstleistungen und Handwerkerleistungen</col>
+        <col id="2" translatable="yes">Steuerermäßigung bei Aufwendungen für geringfügige Beschäftigungen im Privathaushalt – sog. Minijobs</col>
+        <col id="3" translatable="yes">Zeile 72</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 72</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 71</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 69</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 71</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">Zeile 71</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">Zeile 71</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">HaushaltSozPflichtig</col>
+        <col id="1" translatable="yes">Haushaltsnahe Beschäftigungsverhältnisse, Dienstleistungen und Handwerkerleistungen</col>
+        <col id="2" translatable="yes">Steuerermäßigung bei Aufwendungen für sozialversicherungspflichtige Beschäftigungen im Privathaushalt</col>
+        <col id="3" translatable="yes">Zeile 73</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 73</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 72</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 70</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 72</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">Zeile 72</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">Zeile 72</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">SteuerermäßigungEigenerHaushalt</col>
+        <col id="1" translatable="yes">Haushaltsnahe Beschäftigungsverhältnisse, Dienstleistungen und Handwerkerleistungen</col>
+        <col id="2" translatable="yes">Steuerermäßigung bei Aufwendungen für haushaltsnahe Dienstleistungen, Hilfe im eigenen Haushalt	</col>
+        <col id="3" translatable="yes">Zeile 74</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 74</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 73</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 71</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 73</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">Zeile 73</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">Zeile 73</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">SteuerermäßigungHaushalt</col>
+        <col id="1" translatable="yes">Haushaltsnahe Beschäftigungsverhältnisse, Dienstleistungen und Handwerkerleistungen</col>
+        <col id="2" translatable="yes">Steuerermäßigung bei Aufwendungen für Pflege- und Betreuungsleistungen im Haushalt, in Heimunterbringungskosten enthaltene Aufwendungen für Dienstleistungen, die denen einer Haushaltshilfe vergleichbar sind (soweit nicht bereits berücksichtigt)</col>
+        <col id="3" translatable="yes">Zeile 75</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 75</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 74</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 72</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">in Zeile 72 enthalten</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">in Zeile 72 enthalten</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">in Zeile 72 enthalten</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">SteuerermäßigungRenovierung</col>
+        <col id="1" translatable="yes">Haushaltsnahe Beschäftigungsverhältnisse, Dienstleistungen und Handwerkerleistungen</col>
+        <col id="2" translatable="yes">Steuerermäßigung bei Aufwendungen für Handwerkerleistungen für Renovierungs-, Erhaltungs- und Modernisierungsmaßnahmen im eigenen Haushalt (ohne öffentlich geförderte Maßnahmen, für die zinsverbilligte Darlehen oder steuerfreie Zuschüsse in Anspruch genommen werden)</col>
+        <col id="3" translatable="yes">Zeile 76</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 76</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 75</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 73</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">in Zeile 73 enthalten</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">in Zeile 73 enthalten</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">in Zeile 73 enthalten</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">SteuerermäßigungKulturgüter</col>
+        <col id="1" translatable="yes">Steuerbegünstigung für schutzwürdige Kulturgüter</col>
+        <col id="2" translatable="yes">Steuerbegünstigung nach § 10g EStG für schutzwürdige Kulturgüter, die weder zur Einkunftserzielung noch zu eigenen Wohnzwecken genutzt werden</col>
+        <col id="3" translatable="yes">Zeile 79</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 79</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 81</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 79</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 79</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">Zeile 93</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">Zeile 93</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">SonstNegativeEinkünfte</col>
+        <col id="1" translatable="yes">Sonstige Angaben und Anträge</col>
+        <col id="2" translatable="yes">Von den nicht ausgeglichenen negativen Einkünften soll folgender Gesamtbetrag ins Vorjahr zurückgetragen werden</col>
+        <col id="3" translatable="yes">Zeile 93</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 93</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 93</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 81</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 81</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">Zeile 95</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">Zeile 95</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">SonstProgressionsvorbehalt</col>
+        <col id="1" translatable="yes">Sonstige Angaben und Anträge</col>
+        <col id="2" translatable="yes">Einkommensersatzleistungen, die dem Progressionsvorbehalt unterliegen, z. B. Krankengeld, Elterngeld, Mutterschaftsgeld (soweit nicht in der Anlage N eingetragen)</col>
+        <col id="3" translatable="yes">Zeile 94</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 94</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 94</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 91</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 91</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">Zeile 96</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">Zeile 96</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">SonstAusländischeEinkünfte</col>
+        <col id="1" translatable="yes">Sonstige Angaben und Anträge bei zeitweiser unbeschränkter Steuerpflicht</col>
+        <col id="2" translatable="yes">Ausländische Einkünfte, die außerhalb der genannten Zeiträume bezogen wurden und nicht der deutschen Einkommensteuer unterlegen haben (Bitte Nachweise über die Art und Höhe dieser Einkünfte beifügen.)</col>
+        <col id="3" translatable="yes">Zeile 98</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 98</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 98</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 95</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 95</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">-</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">-</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">SonstAußergewöhnlicheEinkünfte</col>
+        <col id="1" translatable="yes">Sonstige Angaben und Anträge bei zeitweiser unbeschränkter Steuerpflicht</col>
+        <col id="2" translatable="yes">Enthaltende außerordentliche Einkünfte i. S. d. §§ 34, 34b EStG</col>
+        <col id="3" translatable="yes">Zeile 99</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 99</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 99</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 96</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 96</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">-</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">-</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">SonstEinkünfteOhneEinkommensteuer</col>
+        <col id="1" translatable="yes">Sonstige Angaben und Anträge bei Personen ohne Wohnsitz oder gewöhnlichen Aufenthalt im Inland, die beantragen, als unbeschränkt steuerpflichtig behandelt zu werden</col>
+        <col id="2" translatable="yes">Summe der nicht der deutschen Einkommensteuer unterliegenden Einkünfte (ggf. „0“)</col>
+        <col id="3" translatable="yes">Zeile 103</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 103</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 103</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 101</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 100</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">-</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">-</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">SonstEinkünfteAuslandWohnsitz</col>
+        <col id="1" translatable="yes">Sonstige Angaben und Anträge bei Personen ohne Wohnsitz oder gewöhnlichen Aufenthalt im Inland, die beantragen, als unbeschränkt steuerpflichtig behandelt zu werden</col>
+        <col id="2" translatable="yes">Enthaltene außerordentliche Einkünfte i. S. d. §§ 34, 34b EStG</col>
+        <col id="3" translatable="yes">Zeile 104</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 104</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 105</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 103</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 102</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">-</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">-</col> <!-- line 2018 -->
+      </row>
+    </data>
+  </object>
+  <object class="GtkListStore" id="listTaxItemColumnsEinkommensteuerMantelbogen">
+    <columns>
+      <column type="gchararray"/> <!-- item ID -->
+      <column type="gchararray"/> <!-- item column -->
+      <column type="gchararray"/> <!-- column name -->
+    </columns>
+    <data>
+      <row>
+        <col id="0" translatable="yes">GezahltVorsorgeRenten</col> <!--  -->
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">tatsächlich gezahlt</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">GezahltVorsorgeDauerndeLasten</col> <!--  -->
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">tatsächlich gezahlt</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">GezahltVorsorgeAusgleich</col> <!--  -->
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">tatsächlich gezahlt</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">GezahltVorsorgeUnterhalt</col> <!--  -->
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">tatsächlich gezahlt</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">GezahltVorsorgeKirchensteuer</col> <!--  -->
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">gezahlt</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">GezahltVorsorgeKirchensteuer</col> <!--  -->
+        <col id="1" translatable="yes">02</col>
+        <col id="2" translatable="yes">erstattet</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">AufwendungenBAusbildungStPfl</col> <!--  -->
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">stpfl. Person</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">AufwendungenBAusbildungEhefrau</col> <!--  -->
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">stpfl. Person</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">SpendenBeiträgeSteuerbegZwecke</col> <!--  -->
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">lt. beigef. Bestätigungen</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">SpendenBeiträgeSteuerbegZwecke</col> <!--  -->
+        <col id="1" translatable="yes">02</col>
+        <col id="2" translatable="yes">lt. Nachweis Betriebsfinanzamt</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">SpendenBeiträgeEU</col> <!--  -->
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">lt. beigef. Bestätigungen</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">SpendenBeiträgeEU</col> <!--  -->
+        <col id="1" translatable="yes">02</col>
+        <col id="2" translatable="yes">lt. Nachweis Betriebsfinanzamt</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">SpendenBeiträgeParteien</col> <!--  -->
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">lt. beigef. Bestätigungen</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">SpendenBeiträgeParteien</col> <!--  -->
+        <col id="1" translatable="yes">02</col>
+        <col id="2" translatable="yes">lt. Nachweis Betriebsfinanzamt</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">SpendenBeiträgeWählervereinigung</col> <!--  -->
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">lt. beigef. Bestätigungen</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">SpendenBeiträgeWählervereinigung</col> <!--  -->
+        <col id="1" translatable="yes">02</col>
+        <col id="2" translatable="yes">lt. Nachweis Betriebsfinanzamt</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">SpendenBeiträgeStiftung</col> <!--  -->
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">stpfl. Person / Ehemann</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">SpendenBeiträgeStiftung</col> <!--  -->
+        <col id="1" translatable="yes">02</col>
+        <col id="2" translatable="yes">Ehefrau</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">SpendenBeiträgeStiftungEU</col> <!--  -->
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">stpfl. Person / Ehemann</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">SpendenBeiträgeStiftungEU</col> <!--  -->
+        <col id="1" translatable="yes">02</col>
+        <col id="2" translatable="yes">Ehefrau</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">SpendenBeiträgeStiftungDiesesJahr</col> <!--  -->
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">stpfl. Person / Ehemann</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">SpendenBeiträgeStiftungDiesesJahr</col> <!--  -->
+        <col id="1" translatable="yes">02</col>
+        <col id="2" translatable="yes">Ehefrau</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">SpendenBeiträgeStiftungVorjahre</col> <!--  -->
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">stpfl. Person / Ehemann</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">SpendenBeiträgeStiftungVorjahre</col> <!--  -->
+        <col id="1" translatable="yes">02</col>
+        <col id="2" translatable="yes">Ehefrau</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">Belastungen</col> <!--  -->
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">Aufwendungen</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">Belastungen</col> <!--  -->
+        <col id="1" translatable="yes">02</col>
+        <col id="2" translatable="yes">Erhaltene Leistungen</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">HaushaltMinijobs</col> <!--  -->
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">Aufwendungen</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">HaushaltSozPflichtig</col> <!--  -->
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">Aufwendungen</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">SteuerermäßigungEigenerHaushalt</col> <!--  -->
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">Aufwendungen</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">SteuerermäßigungHaushalt</col> <!--  -->
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">Aufwendungen</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">SteuerermäßigungRenovierung</col> <!--  -->
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">Aufwendungen</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">SteuerermäßigungKulturgüter</col> <!--  -->
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">Abzugsbetrag</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">SonstNegativeEinkünfte</col> <!--  -->
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">stpfl. Person / Ehemann</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">SonstNegativeEinkünfte</col> <!--  -->
+        <col id="1" translatable="yes">02</col>
+        <col id="2" translatable="yes">Ehefrau</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">SonstProgressionsvorbehalt</col> <!--  -->
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">stpfl. Person / Ehemann</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">SonstProgressionsvorbehalt</col> <!--  -->
+        <col id="1" translatable="yes">02</col>
+        <col id="2" translatable="yes">Ehefrau</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">SonstAusländischeEinkünfte</col> <!--  -->
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">stpfl. Person</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">SonstAußergewöhnlicheEinkünfte</col> <!--  -->
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">stpfl. Person</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">SonstEinkünfteOhneEinkommensteuer</col> <!--  -->
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">stpfl. Person / Ehemann</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">SonstEinkünfteOhneEinkommensteuer</col> <!--  -->
+        <col id="1" translatable="yes">02</col>
+        <col id="2" translatable="yes">Ehefrau</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">SonstEinkünfteAuslandWohnsitz</col> <!--  -->
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">stpfl. Person</col>
+      </row>
+    </data>
+  </object>
+</interface>

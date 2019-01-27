@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk+" version="2.24"/>
+  <!-- interface-naming-policy project-wide -->
+  <object class="GtkListStore" id="listTaxItemLinesEinkommensteuerAnlageAV">
+    <columns>
+      <column type="gchararray"/><!-- item ID of structure <taxType>-<taxFormID>-<taxItem> -->
+      <column type="gchararray"/><!-- item Text -->
+      <column type="gchararray"/><!-- item help -->
+      <column type="gchararray"/><!-- item line in year 2012 -->
+      <column type="gchararray"/><!-- item line in year 2013 -->
+      <column type="gchararray"/><!-- item line in year 2014 -->
+      <column type="gchararray"/><!-- item line in year 2015 -->
+      <column type="gchararray"/><!-- item line in year 2016 -->
+      <column type="gchararray"/><!-- item line in year 2017 -->
+      <column type="gchararray"/><!-- item line in year 2018 -->
+    </columns>
+    <data>
+      <row>
+        <col id="0" translatable="yes">Riester</col>
+        <col id="1" translatable="yes">Riesterverträge</col>
+        <col id="2" translatable="yes">Geleistete Altersvorsorgebeiträge für Riester-Verträge, für die vom Anbieter Altersvorsorgebeiträge übermittelt werden.</col>
+        <col id="3" translatable="yes">Zeile 08</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 08</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 08</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 08</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 07</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">Zeile 07</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">Zeile 07</col> <!-- line 2018 -->
+      </row>
+    </data>
+  </object>
+  <object class="GtkListStore" id="listTaxItemColumnsEinkommensteuerAnlageAV">
+    <columns>
+      <column type="gchararray"/> <!-- item ID -->
+      <column type="gchararray"/> <!-- item column -->
+      <column type="gchararray"/> <!-- column name -->
+    </columns>
+    <data>
+      <row>
+        <col id="0" translatable="yes">Riester</col> <!-- Beiträge zu Riesterverträgen -->
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">stpfl. Person/Ehemann</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">Riester</col> <!-- Beiträge zu Riesterverträgen -->
+        <col id="1" translatable="yes">02</col>
+        <col id="2" translatable="yes">Ehefrau</col>
+      </row>
+    </data>
+  </object>
+</interface>

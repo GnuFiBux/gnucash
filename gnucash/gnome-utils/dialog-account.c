@@ -95,6 +95,7 @@ typedef struct _AccountWindow
     GtkWidget * color_default_button;
     GtkWidget * code_entry;
     GtkTextBuffer * notes_text_buffer;
+    GtkTextBuffer * tax_code_text_buffer;
 
     GtkWidget * commodity_edit;
     dialog_commodity_mode commodity_mode;
@@ -267,6 +268,11 @@ gnc_account_to_ui(AccountWindow *aw)
     flag = xaccAccountGetTaxRelated (account);
     gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (aw->tax_related_button),
                                   flag);
+
+    string = xaccAccountGetTaxUSCode (account);
+    if (string == NULL) string = "";
+
+    gtk_text_buffer_set_text (aw->tax_code_text_buffer, string, strlen(string));
 
     flag = xaccAccountGetPlaceholder (account);
     gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (aw->placeholder_button),
@@ -1345,6 +1351,7 @@ gnc_account_window_create(GtkWindow *parent, AccountWindow *aw)
     aw->color_default_button = GTK_WIDGET(gtk_builder_get_object (builder, "color_default_button"));
     aw->code_entry =        GTK_WIDGET(gtk_builder_get_object (builder, "code_entry"));
     aw->notes_text_buffer = gtk_text_view_get_buffer (GTK_TEXT_VIEW (GTK_WIDGET(gtk_builder_get_object (builder, "notes_text"))));
+    aw->tax_code_text_buffer = gtk_text_view_get_buffer (GTK_TEXT_VIEW (GTK_WIDGET(gtk_builder_get_object (builder, "tax_code_view"))));
 
     box = GTK_WIDGET(gtk_builder_get_object (builder, "commodity_hbox"));
     aw->commodity_edit = gnc_general_select_new (GNC_GENERAL_SELECT_TYPE_SELECT,

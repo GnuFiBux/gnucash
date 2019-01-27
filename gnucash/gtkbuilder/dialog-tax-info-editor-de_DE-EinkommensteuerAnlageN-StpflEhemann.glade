@@ -1,0 +1,704 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk+" version="2.24"/>
+  <!-- interface-naming-policy project-wide -->
+  <object class="GtkListStore" id="listTaxItemLinesEinkommensteuerAnlageN-StpflEhemann">
+    <columns>
+      <column type="gchararray"/><!-- item ID of structure <taxType>-<taxFormID>-<taxItem> -->
+      <column type="gchararray"/><!-- item Text -->
+      <column type="gchararray"/><!-- item help -->
+      <column type="gchararray"/><!-- item line in year 2012 -->
+      <column type="gchararray"/><!-- item line in year 2013 -->
+      <column type="gchararray"/><!-- item line in year 2014 -->
+      <column type="gchararray"/><!-- item line in year 2015 -->
+      <column type="gchararray"/><!-- item line in year 2016 -->
+      <column type="gchararray"/><!-- item line in year 2017 -->
+      <column type="gchararray"/><!-- item line in year 2018 -->
+    </columns>
+    <data>
+      <row>
+        <col id="0" translatable="yes">ArbeitslohnBrutto</col>
+        <col id="1" translatable="yes">Angaben zum Arbeitslohn</col>
+        <col id="2" translatable="yes">Bruttoarbeitslohn</col>
+        <col id="3" translatable="yes">Zeile 06</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 06</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 06</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 06</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 06</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">Zeile 06</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">Zeile 06</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">ArbeitslohnLohnsteuer</col>
+        <col id="1" translatable="yes">Angaben zum Arbeitslohn</col>
+        <col id="2" translatable="yes">Lohnsteuer</col>
+        <col id="3" translatable="yes">Zeile 07</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 07</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 07</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 07</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 07</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">Zeile 07</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">Zeile 07</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">ArbeitslohnSolidaritätszuschlag</col>
+        <col id="1" translatable="yes">Angaben zum Arbeitslohn</col>
+        <col id="2" translatable="yes">Solidaritätszuschlag</col>
+        <col id="3" translatable="yes">Zeile 08</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 08</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 08</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 08</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 08</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">Zeile 08</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">Zeile 08</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">ArbeitslohnKirchensteuer</col>
+        <col id="1" translatable="yes">Angaben zum Arbeitslohn</col>
+        <col id="2" translatable="yes">Kirchensteuer des Arbeitnehmers</col>
+        <col id="3" translatable="yes">Zeile 09</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 09</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 09</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 09</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 09</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">Zeile 09</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">Zeile 09</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">ArbeitslohnSteuerbegVorsorgebezüge</col>
+        <col id="1" translatable="yes">Angaben zum Arbeitslohn</col>
+        <col id="2" translatable="yes">Steuerbegünstigte Versorgungsbezüge</col>
+        <col id="3" translatable="yes">Zeile 11</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 11</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 11</col> <!-- line 2014 -->
+        <col id="7" translatable="yes">Zeile 11</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 11</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">Zeile 11</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">Zeile 11</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">ArbeitslohnBemGrundlageVorsorgFreibetr</col>
+        <col id="1" translatable="yes">Angaben zum Arbeitslohn</col>
+        <col id="2" translatable="yes">Bemessungsgrundlage für den Versorgungsfreibetrag lt. Lohnsteuerbescheinigung</col>
+        <col id="3" translatable="yes">Zeile 12</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 12</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 12</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 12</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 12</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">Zeile 12</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">Zeile 12</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">ArbeitslohnVersorgungsbezügeSonst</col>
+        <col id="1" translatable="yes">Angaben zum Arbeitslohn</col>
+        <col id="2" translatable="yes">Sterbegeld, Kapitalauszahlungen / Abfindungen und Nachzahlungen von Versorgungsbezügen lt. Lohnsteuerbescheinigung</col>
+        <col id="3" translatable="yes">Zeile 15</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 15</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 15</col> <!-- line 2014 -->
+        <col id="7" translatable="yes">Zeile 15</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 15</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">Zeile 15</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">Zeile 15</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">ArbeitslohnVersorgungsbezügeErmSteuer</col>
+        <col id="1" translatable="yes">Angaben zum Arbeitslohn</col>
+        <col id="2" translatable="yes">Ermäßigt zu besteuernde Versorgungsbezüge für mehrere Jahre lt. Lohnsteuerbescheinigung</col>
+        <col id="3" translatable="yes">Zeile 16</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 16</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 16</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 16</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 16</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">Zeile 16</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">Zeile 16</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">ArbeitslohnEntschädigungen</col>
+        <col id="1" translatable="yes">Angaben zum Arbeitslohn</col>
+        <col id="2" translatable="yes">Entschädigungen (Bitte Vertragsunterlagen beifügen.) /Arbeitslohn für mehrere Jahre</col>
+        <col id="3" translatable="yes">Zeile 17</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 17</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 17</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 17</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 17</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">Zeile 17</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">Zeile 17</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">ArbeitslohnKeinSteuerAbzug</col>
+        <col id="1" translatable="yes">Angaben zum Arbeitslohn</col>
+        <col id="2" translatable="yes">Steuerpflichtiger Arbeitslohn, von dem kein Steuerabzug vorgenommen worden ist (soweit nicht in der Lohnsteuerbescheinigung enthalten)</col>
+        <col id="3" translatable="yes">Zeile 20</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 20</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 20</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 20</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 20</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">Zeile 21</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">Zeile 21</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">ArbeitslohnSteuerfreiDoppelbest</col>
+        <col id="1" translatable="yes">Angaben zum Arbeitslohn</col>
+        <col id="2" translatable="yes">Steuerfreier Arbeitslohn nach Doppelbesteuerungsabkommen / sonstigen zwischenstaatlichen Übereinkommen (Übertrag aus der ersten Anlage N-AUS)</col>
+        <col id="3" translatable="yes">Zeile 21</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 21</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 21</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 21</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 21</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">Zeile 22</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">Zeile 22</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">ArbeitslohnSteuerfreiAuslandstätigkeit</col>
+        <col id="1" translatable="yes">Angaben zum Arbeitslohn</col>
+        <col id="2" translatable="yes">Steuerfreier Arbeitslohn nach Auslandstätigkeitserlass (Übertrag aus der ersten Anlage N-AUS)</col>
+        <col id="3" translatable="yes">Zeile 22</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 22</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 22</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 22</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 22</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">Zeile 23</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">Zeile 23</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">ArbeitslohnSteuerfreiEinkünfteDoppel</col>
+        <col id="1" translatable="yes">Angaben zum Arbeitslohn</col>
+        <col id="2" translatable="yes">Steuerfreie Einkünfte (Besondere Lohnbestandteile) nach Doppelbesteuerungsabkommen / sonstigen zwischenstaatlichen Übereinkommen / Auslandstätigkeitserlass (Übertrag aus der ersten Anlage N-AUS)</col>
+        <col id="3" translatable="yes">Zeile 23</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 23</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 23</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 23</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 23</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">Zeile 24</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">Zeile 24</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">ArbeitslohnSteuerfreiAufwandsentschädigung</col>
+        <col id="1" translatable="yes">Angaben zum Arbeitslohn</col>
+        <col id="2" translatable="yes">Steuerfrei erhaltene Aufwandsentschädigungen / Einnahmen</col>
+        <col id="3" translatable="yes">Zeile 26</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 26</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 26</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 26</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 26</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">Zeile 27</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">Zeile 27</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">ArbeitslohnSonstiges</col>
+        <col id="1" translatable="yes">Angaben zum Arbeitslohn</col>
+        <col id="2" translatable="yes">Kurzarbeitergeld, Zuschuss zum Mutterschaftsgeld, Verdienstausfallentschädigung nach dem Infektionsschutzgesetz, Aufstockungsbeträge nach dem Altersteilzeitgesetz, Altersteilzeitzuschläge nach Besoldungsgesetzen (lt. Lohnsteuerbescheinigung)</col>
+        <col id="3" translatable="yes">Zeile 27</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 27</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 27</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 27</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 27</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">Zeile 28</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">Zeile 28</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">ArbeitslohnInsolvenzgeld</col>
+        <col id="1" translatable="yes">Angaben zum Arbeitslohn</col>
+        <col id="2" translatable="yes">Insolvenzgeld</col>
+        <col id="3" translatable="yes">Zeile 28</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 28</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 28</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile nicht enthalten</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile nicht enthalten</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">Zeile nicht enthalten</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">Zeile nicht enthalten</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">ArbeitslohnErsatzleistungen</col>
+        <col id="1" translatable="yes">Angaben zum Arbeitslohn</col>
+        <col id="2" translatable="yes">Andere Lohn- / Entgeltersatzleistungen (z. B. Arbeitslosengeld, Elterngeld, Krankengeld, Mutterschaftsgeld und vergleichbare Leistungen aus einem EU- / EWR-Staat oder der Schweiz)</col>
+        <col id="3" translatable="yes">Zeile 29</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 29</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 29</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile nicht enthalten</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile nicht enthalten</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">Zeile nicht enthalten</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">Zeile nicht enthalten</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">WerbungFahrtkostenArbeit1</col>
+        <col id="1" translatable="yes">Werbungskosten</col>
+        <col id="2" translatable="yes">Fahrtkosten zur Arbeitsstätte 1, Aufwendungen für Fahrten mit öffentlichenVerkehrsmitteln (ohne Flug- und Fährkosten)</col>
+        <col id="3" translatable="yes">Zeile 36</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 36</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 35</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 35</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 35</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">Zeile 35</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">Zeile 35</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">WerbungFahrtkostenArbeit2</col>
+        <col id="1" translatable="yes">Werbungskosten</col>
+        <col id="2" translatable="yes">Fahrtkosten zur Arbeitsstätte 2, Aufwendungen für Fahrten mit öffentlichenVerkehrsmitteln (ohne Flug- und Fährkosten)</col>
+        <col id="3" translatable="yes">Zeile 37</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 37</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 36</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 36</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 36</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">Zeile 36</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">Zeile 36</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">WerbungFahrtkostenArbeit3</col>
+        <col id="1" translatable="yes">Werbungskosten</col>
+        <col id="2" translatable="yes">Fahrtkosten zur Arbeitsstätte 3, Aufwendungen für Fahrten mit öffentlichenVerkehrsmitteln (ohne Flug- und Fährkosten)</col>
+        <col id="3" translatable="yes">Zeile 38</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 38</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 37</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 37</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 37</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">Zeile 37</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">Zeile 37</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">WerbungFahrtkostenArbeit4</col>
+        <col id="1" translatable="yes">Werbungskosten</col>
+        <col id="2" translatable="yes">Fahrtkosten zur Arbeitsstätte 4, Aufwendungen für Fahrten mit öffentlichenVerkehrsmitteln (ohne Flug- und Fährkosten)</col>
+        <col id="3" translatable="yes">Zeile 39</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 39</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 38</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 38</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 38</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">Zeile 38</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">Zeile 38</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">WerbungFahrtkostenZuschüsse</col>
+        <col id="1" translatable="yes">Werbungskosten</col>
+        <col id="2" translatable="yes">Arbeitgeberleistungen lt. Lohnsteuerbescheinigung und von der Agentur für Arbeit gezahlte Fahrtkostenzuschüsse</col>
+        <col id="3" translatable="yes">Zeile 40</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 40</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 39</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 39</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 39</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">Zeile 39</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">Zeile 39</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">WerbungBerufsverbände</col>
+        <col id="1" translatable="yes">Werbungskosten</col>
+        <col id="2" translatable="yes">Beiträge zu Berufsverbänden</col>
+        <col id="3" translatable="yes">Zeile 41</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 41</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 40</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 40</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 40</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">Zeile 40</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">Zeile 40</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">WerbungArbeitsmittel</col>
+        <col id="1" translatable="yes">Werbungskosten</col>
+        <col id="2" translatable="yes">Aufwendungen für Arbeitsmittel – soweit nicht steuerfrei ersetzt</col>
+        <col id="3" translatable="yes">Zeile 42</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 42</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 42</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 42</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 42</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">Zeile 42</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">Zeile 42</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">WerbungArbeitszimmer</col>
+        <col id="1" translatable="yes">Werbungskosten</col>
+        <col id="2" translatable="yes">Aufwendungen für ein häusliches Arbeitszimmer</col>
+        <col id="3" translatable="yes">Zeile 44</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 44</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 43</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 43</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 43</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">Zeile 43</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">Zeile 43</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">WerbungFortbildung</col>
+        <col id="1" translatable="yes">Werbungskosten</col>
+        <col id="2" translatable="yes">Fortbildungskosten – soweit nicht steuerfrei ersetzt</col>
+        <col id="3" translatable="yes">Zeile 45</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 45</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 44</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 44</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 44</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">Zeile 44</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">Zeile 44</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">WerbungWeitere</col>
+        <col id="1" translatable="yes">Werbungskosten</col>
+        <col id="2" translatable="yes">Weitere Werbungskosten – soweit nicht steuerfrei ersetzt</col>
+        <col id="3" translatable="yes">Zeile 49</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 49</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 48</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 48</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 48</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">Zeile 48</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">Zeile 48</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">WerbungReisekosten</col>
+        <col id="1" translatable="yes">Werbungskosten</col>
+        <col id="2" translatable="yes">Reisekosten bei beruflich veranlassten Auswärtstätigkeiten Fahrt- und Übernachtungskosten, Reisenebenkosten (ohne Fahrtkosten bei Firmenwagennutzung sowie Sammelbeförderung des Arbeitgebers)</col>
+        <col id="3" translatable="yes">Zeile 50</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 50</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 50</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 50</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 50</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">Zeile 50</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">Zeile 50</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">WerbungReisekostenErsetzt</col>
+        <col id="1" translatable="yes">Werbungskosten</col>
+        <col id="2" translatable="yes">Reisekosten bei beruflich veranlassten Auswärtstätigkeiten, vom Arbeitgeber steuerfrei ersetzt</col>
+        <col id="3" translatable="yes">Zeile 51</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 51</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 51</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 51</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 51</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">Zeile 51</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">Zeile 51</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">WerbungMehraufwendungenErsetzt</col>
+        <col id="1" translatable="yes">Werbungskosten</col>
+        <col id="2" translatable="yes">Mehraufwendungen für Verpflegung, vom Arbeitgeber steuerfrei ersetzt</col>
+        <col id="3" translatable="yes">Zeile 56</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 56</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 57</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 57</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 57</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">Zeile 57</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">Zeile 57</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">WerbungDoppelHaushaltFahrtHinRück</col>
+        <col id="1" translatable="yes">Werbungskosten - Mehraufwendungen für doppelte Haushaltsführung</col>
+        <col id="2" translatable="yes">Kosten der ersten Fahrt zum Beschäftigungsort und der letzten Fahrt zum eigenen Hausstand (ohne Fahrtkosten bei Firmenwagennutzung sowie Sammelbeförderung des Arbeitgebers) - mit öffentlichen Verkehrsmitteln oder entgeltlicher Sammelbeförderung</col>
+        <col id="3" translatable="yes">Zeile 64</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 64</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 73</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 73</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 73</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">Zeile 73</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">Zeile 73</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">WerbungDoppelHaushaltFahrtHeim</col>
+        <col id="1" translatable="yes">Werbungskosten - Mehraufwendungen für doppelte Haushaltsführung</col>
+        <col id="2" translatable="yes">Fahrtkosten für Heimfahrten - Kosten für öffentliche Verkehrsmittel (ohne Flug- und Fährkosten)</col>
+        <col id="3" translatable="yes">Zeile 67</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 67</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 75</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 75</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 75</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">Zeile 75</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">Zeile 75</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">WerbungDoppelHaushaltBehinderung</col>
+        <col id="1" translatable="yes">Werbungskosten - Mehraufwendungen für doppelte Haushaltsführung</col>
+        <col id="2" translatable="yes">Nur bei Behinderungsgrad von mindestens 70 oder mindestens 50 und Merkzeichen „G“: tatsächliche Kosten für private Kfz und öffentliche Verkehrsmittel (lt. Nachweis) </col>
+        <col id="3" translatable="yes">Zeile 70</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 70</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 77</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 77</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 77</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">Zeile 77</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">Zeile 77</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">WerbungDoppelHaushaltFlugFähre</col>
+        <col id="1" translatable="yes">Werbungskosten - Mehraufwendungen für doppelte Haushaltsführung</col>
+        <col id="2" translatable="yes">Flug- und Fährkosten für Heimfahrten (lt. Nachweis)</col>
+        <col id="3" translatable="yes">Zeile 72</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 72</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 78</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 78</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 78</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">Zeile 78</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">Zeile 78</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">WerbungDoppelHaushaltUnterkunftArbeitsort</col>
+        <col id="1" translatable="yes">Werbungskosten - Mehraufwendungen für doppelte Haushaltsführung</col>
+        <col id="2" translatable="yes">Kosten der Unterkunft am Arbeitsort (lt. Nachweis)</col>
+        <col id="3" translatable="yes">Zeile 73</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 73</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 79</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 79</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 79</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">Zeile 79</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">Zeile 79</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">WerbungDoppelHaushaltSonst</col>
+        <col id="1" translatable="yes">Werbungskosten - Mehraufwendungen für doppelte Haushaltsführung</col>
+        <col id="2" translatable="yes">Sonstige Aufwendungen</col>
+        <col id="3" translatable="yes">Zeile 77</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 77</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 86</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 86</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 86</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">Zeile 85</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">Zeile 85</col> <!-- line 2018 -->
+      </row>
+      <row>
+        <col id="0" translatable="yes">WerbungDoppelHaushaltErsetzt</col>
+        <col id="1" translatable="yes">Werbungskosten - Mehraufwendungen für doppelte Haushaltsführung</col>
+        <col id="2" translatable="yes">Vom Arbeitgeber oder von der Agentur für Arbeit steuerfrei ersetzt</col>
+        <col id="3" translatable="yes">Zeile 79</col> <!-- line 2012 -->
+        <col id="4" translatable="yes">Zeile 79</col> <!-- line 2013 -->
+        <col id="5" translatable="yes">Zeile 87</col> <!-- line 2014 -->
+        <col id="6" translatable="yes">Zeile 87</col> <!-- line 2015 -->
+        <col id="7" translatable="yes">Zeile 87</col> <!-- line 2016 -->
+        <col id="8" translatable="yes">Zeile 87</col> <!-- line 2017 -->
+        <col id="9" translatable="yes">Zeile 87</col> <!-- line 2018 -->
+      </row>
+    </data>
+  </object>
+  <object class="GtkListStore" id="listTaxItemColumnsEinkommensteuerAnlageN-StpflEhemann">
+    <columns>
+      <column type="gchararray"/> <!-- item ID -->
+      <column type="gchararray"/> <!-- item column -->
+      <column type="gchararray"/> <!-- column name -->
+    </columns>
+    <data>
+      <row>
+        <col id="0" translatable="yes">ArbeitslohnBrutto</col> <!-- Arbeitslohn -->
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">Steuerklasse 1-5</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">ArbeitslohnBrutto</col> <!-- Arbeitslohn -->
+        <col id="1" translatable="yes">02</col>
+        <col id="2" translatable="yes">Steuerklasse 6</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">ArbeitslohnLohnsteuer</col> <!-- Arbeitslohn -->
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">Steuerklasse 1-5</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">ArbeitslohnLohnsteuer</col> <!-- Arbeitslohn -->
+        <col id="1" translatable="yes">02</col>
+        <col id="2" translatable="yes">Steuerklasse 6</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">ArbeitslohnSolidaritätszuschlag</col> <!-- Arbeitslohn -->
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">Steuerklasse 1-5</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">ArbeitslohnSolidaritätszuschlag</col> <!-- Arbeitslohn -->
+        <col id="1" translatable="yes">02</col>
+        <col id="2" translatable="yes">Steuerklasse 6</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">ArbeitslohnKirchensteuer</col> <!-- Arbeitslohn -->
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">Steuerklasse 1-5</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">ArbeitslohnKirchensteuer</col> <!-- Arbeitslohn -->
+        <col id="1" translatable="yes">02</col>
+        <col id="2" translatable="yes">Steuerklasse 6</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">ArbeitslohnSteuerbegVorsorgebezüge</col> <!-- Arbeitslohn -->
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">1. Versorgungsbezug</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">ArbeitslohnSteuerbegVorsorgebezüge</col> <!-- Arbeitslohn -->
+        <col id="1" translatable="yes">02</col>
+        <col id="2" translatable="yes">2. Versorgungsbezug</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">ArbeitslohnBemGrundlageVorsorgFreibetr</col> <!-- Arbeitslohn -->
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">1. Versorgungsbezug</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">ArbeitslohnBemGrundlageVorsorgFreibetr</col> <!-- Arbeitslohn -->
+        <col id="1" translatable="yes">02</col>
+        <col id="2" translatable="yes">2. Versorgungsbezug</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">ArbeitslohnVersorgungsbezügeSonst</col> <!-- Arbeitslohn -->
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">1. Versorgungsbezug</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">ArbeitslohnVersorgungsbezügeSonst</col> <!-- Arbeitslohn -->
+        <col id="1" translatable="yes">02</col>
+        <col id="2" translatable="yes">2. Versorgungsbezug</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">ArbeitslohnVersorgungsbezügeErmSteuer</col> <!-- Arbeitslohn -->
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">1. Versorgungsbezug</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">ArbeitslohnVersorgungsbezügeErmSteuer</col> <!-- Arbeitslohn -->
+        <col id="1" translatable="yes">02</col>
+        <col id="2" translatable="yes">2. Versorgungsbezug</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">ArbeitslohnEntschädigungen</col> <!-- Arbeitslohn -->
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">Stpfl. Person</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">ArbeitslohnKeinSteuerAbzug</col> <!-- Arbeitslohn -->
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">Stpfl. Person</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">ArbeitslohnSteuerfreiDoppelbest</col> <!-- Arbeitslohn -->
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">Stpfl. Person</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">ArbeitslohnSteuerfreiAuslandstätigkeit</col> <!-- Arbeitslohn -->
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">Stpfl. Person</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">ArbeitslohnSteuerfreiEinkünfteDoppel</col> <!-- Arbeitslohn -->
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">Stpfl. Person</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">ArbeitslohnSteuerfreiAufwandsentschädigung</col> <!-- Arbeitslohn -->
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">Stpfl. Person</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">ArbeitslohnSonstiges</col> <!-- Arbeitslohn -->
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">Stpfl. Person</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">ArbeitslohnInsolvenzgeld</col> <!-- Arbeitslohn -->
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">Stpfl. Person</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">ArbeitslohnErsatzleistungen</col> <!-- Arbeitslohn -->
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">Stpfl. Person</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">WerbungFahrtkostenArbeit1</col> <!-- Werbungskosten -->
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">Stpfl. Person</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">WerbungFahrtkostenArbeit2</col> <!-- Werbungskosten -->
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">Stpfl. Person</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">WerbungFahrtkostenArbeit3</col> <!-- Werbungskosten -->
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">Stpfl. Person</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">WerbungFahrtkostenArbeit4</col> <!-- Werbungskosten -->
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">Stpfl. Person</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">WerbungFahrtkostenZuschüsse</col> <!-- Werbungskosten -->
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">steuerfrei ersetzt</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">WerbungFahrtkostenZuschüsse</col> <!-- Werbungskosten -->
+        <col id="1" translatable="yes">02</col>
+        <col id="2" translatable="yes">pauschal besteuert</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">WerbungBerufsverbände</col> <!-- Werbungskosten -->
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">Stpfl. Person</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">WerbungArbeitsmittel</col> <!-- Werbungskosten -->
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">Stpfl. Person</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">WerbungArbeitszimmer</col> <!-- Werbungskosten -->
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">Stpfl. Person</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">WerbungFortbildung</col> <!-- Werbungskosten -->
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">Stpfl. Person</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">WerbungWeitere</col> <!-- Werbungskosten -->
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">Stpfl. Person</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">WerbungReisekosten</col> <!-- Werbungskosten -->
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">Stpfl. Person</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">WerbungReisekostenErsetzt</col> <!-- Werbungskosten -->
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">Stpfl. Person</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">WerbungMehraufwendungenErsetzt</col> <!-- Werbungskosten -->
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">Stpfl. Person</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">WerbungDoppelHaushaltFahrtHinRück</col> <!-- Werbungskosten -->
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">Stpfl. Person</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">WerbungDoppelHaushaltFahrtHeim</col> <!-- Werbungskosten -->
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">Stpfl. Person</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">WerbungDoppelHaushaltBehinderung</col> <!-- Werbungskosten -->
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">Stpfl. Person</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">WerbungDoppelHaushaltFlugFähre</col> <!-- Werbungskosten -->
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">Stpfl. Person</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">WerbungDoppelHaushaltUnterkunftArbeitsort</col> <!-- Werbungskosten -->
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">Stpfl. Person</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">WerbungDoppelHaushaltSonst</col> <!-- Werbungskosten -->
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">Stpfl. Person</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">WerbungDoppelHaushaltErsetzt</col> <!-- Werbungskosten -->
+        <col id="1" translatable="yes">01</col>
+        <col id="2" translatable="yes">Stpfl. Person</col>
+      </row>
+    </data>
+  </object>
+</interface>

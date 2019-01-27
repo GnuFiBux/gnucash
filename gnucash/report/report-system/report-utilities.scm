@@ -403,6 +403,48 @@ construct gnc:make-gnc-monetary and use gnc:monetary->string instead.")
         (car (coll 'format gnc:make-gnc-monetary #f))
         (throw "gnc:monetary+ expects 1 currency " (gnc:strify monetaries)))))
 
+;; ------------------------------------------------------------------
+;; Get the account balance from specified intervall.
+;; If include-children? is true, the balances of all children
+;; (not just direct children) are included in the calculation.
+;;
+;; based on (gnc:account-get-balance-at-date account date include-children?)
+;; and modified to use -intervall instead of -at-date
+;; ------------------------------------------------------------------
+ 
+(define (gnc:account-get-amount-interval account s-date e-date include-children? sign?)
+  (let* (
+          (collector
+            (gnc:account-get-comm-value-interval
+               account
+               s-date
+               e-date
+               include-children?
+             )
+           )
+;;           (balance
+;;	     (cadr
+;;               (gnc-commodity-collector-assoc-pair
+;;	         collector
+;;                 (xaccAccountGetCommodity account)
+;;                 sign?
+;;               )
+;;             )
+;;           )
+           (balance
+	     (cadr               
+	       (collector
+                 'getpair
+                 (xaccAccountGetCommodity account)
+                 sign?
+               )
+             )
+           )
+         )
+    (gnc-numeric-to-double balance) ;; RETURN value
+  )
+)
+
 ;; get the account balance at the specified date. if include-children?
 ;; is true, the balances of all children (not just direct children)
 ;; are included in the calculation.

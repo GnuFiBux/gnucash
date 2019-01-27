@@ -72,6 +72,7 @@ balance at a given time"))
 (define optname-fullname (N_ "Show long names"))
 (define optname-show-total (N_ "Show Totals"))
 (define optname-show-percent (N_ "Show Percents"))
+(define optname-show-omitted (N_ "Show Omitted Accounts"))
 (define optname-slices (N_ "Maximum Slices"))
 (define optname-plot-width (N_ "Plot Width"))
 (define optname-plot-height (N_ "Plot Height"))
@@ -185,6 +186,11 @@ balance at a given time"))
     (gnc:options-add-sort-method! 
      options gnc:pagename-display
      optname-sort-method "e" 'amount)
+
+     (add-option
+      (gnc:make-simple-boolean-option
+       gnc:pagename-display optname-show-omitted
+       "f" (N_ "Show omitted accounts?") #t))
 
     (gnc:options-set-default-section options gnc:pagename-general)
 
@@ -392,6 +398,7 @@ balance at a given time"))
         (show-fullname? (get-option gnc:pagename-display optname-fullname))
         (show-total? (get-option gnc:pagename-display optname-show-total))
         (show-percent? (get-option gnc:pagename-display optname-show-percent))
+        (show-omitted? (get-option gnc:pagename-display optname-show-omitted))
         (max-slices (inexact->exact
 		     (get-option gnc:pagename-display optname-slices)))
         (height (get-option gnc:pagename-display optname-plot-height))
@@ -452,6 +459,7 @@ balance at a given time"))
               ((WeekDelta) (string-append report-title " " (_ "Weekly Average")))
               (else report-title)))
            (combined '())
+           (omitted '())
            (other-anchor "")
            (print-info (gnc-commodity-print-info report-currency #t)))
 
@@ -513,7 +521,15 @@ balance at a given time"))
       (if (not (null? accounts))
           (begin
             (set! combined
-		  (sort (filter (lambda (pair) (not (>= 0.0 (car pair))))
+		  (sort (filter (lambda (pair) (< 0.0 (car pair)))
+				(fix-signs (cdr (base-data))))
+                        (sort-comparator sort-method show-fullname?)))
+            (set! omitted
+		  (sort (filter (lambda (pair) (>= 0.0 (car pair)))
+				(fix-signs (cdr (base-data))))
+                        (sort-comparator sort-method show-fullname?)))
+            (set! omitted
+		  (sort (filter (lambda (pair) (>= 0.0 (car pair)))
 				(fix-signs (cdr (base-data))))
                         (sort-comparator sort-method show-fullname?)))
 
@@ -612,7 +628,36 @@ balance at a given time"))
              (gnc:html-document-add-object!
               document
 	      (gnc:html-make-empty-data-warning
-	       report-title (gnc:report-id report-obj)))))
+	       report-title (gnc:report-id report-obj))))
+
+            (if show-omitted?
+              (let ((omitted-table (gnc:make-html-table))
+                    (omitted-total 0))
+                (gnc:html-document-add-object!
+                  document 
+                  (gnc:make-html-object 
+                    (_ "Following Accounts have been omitted because they show 0 or negative balance:")))
+                (for-each
+                    (lambda (pair)
+                      (let* ((value (double-to-gnc-numeric
+                                       (car pair)
+                                       (gnc-commodity-get-fraction report-currency)
+                                     GNC-RND-ROUND))
+                             (amount (xaccPrintAmount
+                                       value
+                                       print-info)))
+                        (gnc:html-table-append-row!
+                          omitted-table 
+                          (list 
+                            (display-name show-fullname? (cadr pair))
+                            amount))
+                        (set! omitted-total (+ omitted-total value))))
+                  omitted)
+                (gnc:html-document-add-object! document omitted-table)
+                (gnc:html-document-append-objects! document 
+                  (list 
+                    (gnc:make-html-text
+                      (gnc:html-markup-b "Total omitted value: " (xaccPrintAmount omitted-total print-info))))))))
 
           (gnc:html-document-add-object!
            document

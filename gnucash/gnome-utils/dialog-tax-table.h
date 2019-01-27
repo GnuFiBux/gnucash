@@ -34,6 +34,13 @@ GncTaxTable * gnc_ui_tax_table_new_from_name (GtkWindow *parent, QofBook *book, 
 /* Create a tax-table window */
 TaxTableWindow * gnc_ui_tax_table_window_new (GtkWindow *parent, QofBook *book);
 
+/* Create the tax item for the tax info report */
+const gchar * gnc_ui_account_get_tax_form_line (const gchar *year,
+                                                const gchar *country,
+                                                const gchar *tax_type,
+                                                const gchar *form,
+                                                const gchar *item);
+
 /* Destroy a tax-table window */
 void gnc_ui_tax_table_window_destroy (TaxTableWindow *ttw);
 
